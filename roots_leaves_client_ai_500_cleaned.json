@@ -1,0 +1,3040 @@
+{
+  "version": "2.0",
+  "client": "Roots & Leaves Collection",
+  "project_id": "roots_leaves_client_ai",
+  "source_priority": [
+    "live official website",
+    "this approved Q&A knowledge",
+    "official Roots & Leaves public sources"
+  ],
+  "strict_scope": true,
+  "rules": {
+    "live_website_overrides_old_qa": true,
+    "never_invent": true,
+    "no_unrelated_general_knowledge": true,
+    "no_guaranteed_medical_outcomes": true,
+    "match_customer_language": true,
+    "sales_support_style": true
+  },
+  "verified_facts": {
+    "product_name": "Natural Botanical Hair Mask – Mini Luxe",
+    "brand": "Roots & Leaves Collection",
+    "website": "https://rootsandleavescollection.in",
+    "price": "₹999",
+    "reference_price": "₹1799",
+    "ingredients": [
+      "Amla",
+      "Bhringraj",
+      "Hibiscus",
+      "Fenugreek",
+      "Aloe Vera",
+      "Curry Leaves"
+    ],
+    "shipping": "Free Pan-India Shipping",
+    "cod": "Cash on Delivery (COD) available"
+  },
+  "usage_approved": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye.",
+  "faq_count": 500,
+  "qa_pairs": [
+    {
+      "id": "FAQ-0001",
+      "category": "Product basics",
+      "question": "What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0002",
+      "category": "Product basics",
+      "question": "Please explain: What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0003",
+      "category": "Product basics",
+      "question": "What exactly is this hair mask? in simple words.",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0004",
+      "category": "Product basics",
+      "question": "Can you give me a clear answer to: What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0005",
+      "category": "Product basics",
+      "question": "Customer asks: What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0006",
+      "category": "Product basics",
+      "question": "Before I buy, What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0007",
+      "category": "Product basics",
+      "question": "What does the approved product information say about: What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0008",
+      "category": "Product basics",
+      "question": "Can you clarify: What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0009",
+      "category": "Product basics",
+      "question": "Tell me directly: What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0010",
+      "category": "Product basics",
+      "question": "I want to know: What exactly is this hair mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0011",
+      "category": "Product basics",
+      "question": "Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0012",
+      "category": "Product basics",
+      "question": "Please explain: Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0013",
+      "category": "Product basics",
+      "question": "Is this a powder or ready-to-use mask? in simple words.",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0014",
+      "category": "Product basics",
+      "question": "Can you give me a clear answer to: Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0015",
+      "category": "Product basics",
+      "question": "Customer asks: Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0016",
+      "category": "Product basics",
+      "question": "Before I buy, Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0017",
+      "category": "Product basics",
+      "question": "What does the approved product information say about: Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0018",
+      "category": "Product basics",
+      "question": "Can you clarify: Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0019",
+      "category": "Product basics",
+      "question": "Tell me directly: Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0020",
+      "category": "Product basics",
+      "question": "I want to know: Is this a powder or ready-to-use mask?",
+      "answer": "Ye ready-to-use cream nahi hai; ye botanical hair-mask powder hai jise paste banakar apply kiya jata hai."
+    },
+    {
+      "id": "FAQ-0021",
+      "category": "Product basics",
+      "question": "What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0022",
+      "category": "Product basics",
+      "question": "Please explain: What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0023",
+      "category": "Product basics",
+      "question": "What is the main purpose of this mask? in simple words.",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0024",
+      "category": "Product basics",
+      "question": "Can you give me a clear answer to: What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0025",
+      "category": "Product basics",
+      "question": "Customer asks: What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0026",
+      "category": "Product basics",
+      "question": "Before I buy, What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0027",
+      "category": "Product basics",
+      "question": "What does the approved product information say about: What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0028",
+      "category": "Product basics",
+      "question": "Can you clarify: What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0029",
+      "category": "Product basics",
+      "question": "Tell me directly: What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0030",
+      "category": "Product basics",
+      "question": "I want to know: What is the main purpose of this mask?",
+      "answer": "Roots & Leaves Collection Natural Botanical Hair Mask – Mini Luxe is a botanical herbal hair-mask powder intended to be prepared as a paste and applied to the scalp and hair. The brand positions it for scalp nourishment, healthier-looking hair, reducing hair fall and helping control dandruff."
+    },
+    {
+      "id": "FAQ-0031",
+      "category": "How to use",
+      "question": "How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0032",
+      "category": "How to use",
+      "question": "Please explain: How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0033",
+      "category": "How to use",
+      "question": "How do I use it? in simple words.",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0034",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0035",
+      "category": "How to use",
+      "question": "Customer asks: How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0036",
+      "category": "How to use",
+      "question": "Before I buy, How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0037",
+      "category": "How to use",
+      "question": "What does the approved product information say about: How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0038",
+      "category": "How to use",
+      "question": "Can you clarify: How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0039",
+      "category": "How to use",
+      "question": "Tell me directly: How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0040",
+      "category": "How to use",
+      "question": "I want to know: How do I use it?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0041",
+      "category": "How to use",
+      "question": "How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0042",
+      "category": "How to use",
+      "question": "Please explain: How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0043",
+      "category": "How to use",
+      "question": "How much powder should I take? in simple words.",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0044",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0045",
+      "category": "How to use",
+      "question": "Customer asks: How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0046",
+      "category": "How to use",
+      "question": "Before I buy, How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0047",
+      "category": "How to use",
+      "question": "What does the approved product information say about: How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0048",
+      "category": "How to use",
+      "question": "Can you clarify: How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0049",
+      "category": "How to use",
+      "question": "Tell me directly: How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0050",
+      "category": "How to use",
+      "question": "I want to know: How much powder should I take?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0051",
+      "category": "How to use",
+      "question": "How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0052",
+      "category": "How to use",
+      "question": "Please explain: How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0053",
+      "category": "How to use",
+      "question": "How much curd should I add? in simple words.",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0054",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0055",
+      "category": "How to use",
+      "question": "Customer asks: How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0056",
+      "category": "How to use",
+      "question": "Before I buy, How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0057",
+      "category": "How to use",
+      "question": "What does the approved product information say about: How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0058",
+      "category": "How to use",
+      "question": "Can you clarify: How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0059",
+      "category": "How to use",
+      "question": "Tell me directly: How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0060",
+      "category": "How to use",
+      "question": "I want to know: How much curd should I add?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0061",
+      "category": "How to use",
+      "question": "Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0062",
+      "category": "How to use",
+      "question": "Please explain: Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0063",
+      "category": "How to use",
+      "question": "Should I add egg? in simple words.",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0064",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0065",
+      "category": "How to use",
+      "question": "Customer asks: Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0066",
+      "category": "How to use",
+      "question": "Before I buy, Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0067",
+      "category": "How to use",
+      "question": "What does the approved product information say about: Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0068",
+      "category": "How to use",
+      "question": "Can you clarify: Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0069",
+      "category": "How to use",
+      "question": "Tell me directly: Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0070",
+      "category": "How to use",
+      "question": "I want to know: Should I add egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0071",
+      "category": "How to use",
+      "question": "Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0072",
+      "category": "How to use",
+      "question": "Please explain: Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0073",
+      "category": "How to use",
+      "question": "Is egg compulsory? in simple words.",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0074",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0075",
+      "category": "How to use",
+      "question": "Customer asks: Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0076",
+      "category": "How to use",
+      "question": "Before I buy, Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0077",
+      "category": "How to use",
+      "question": "What does the approved product information say about: Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0078",
+      "category": "How to use",
+      "question": "Can you clarify: Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0079",
+      "category": "How to use",
+      "question": "Tell me directly: Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0080",
+      "category": "How to use",
+      "question": "I want to know: Is egg compulsory?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0081",
+      "category": "How to use",
+      "question": "Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0082",
+      "category": "How to use",
+      "question": "Please explain: Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0083",
+      "category": "How to use",
+      "question": "Can I use the mask without egg? in simple words.",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0084",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0085",
+      "category": "How to use",
+      "question": "Customer asks: Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0086",
+      "category": "How to use",
+      "question": "Before I buy, Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0087",
+      "category": "How to use",
+      "question": "What does the approved product information say about: Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0088",
+      "category": "How to use",
+      "question": "Can you clarify: Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0089",
+      "category": "How to use",
+      "question": "Tell me directly: Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0090",
+      "category": "How to use",
+      "question": "I want to know: Can I use the mask without egg?",
+      "answer": "Egg optional hai. Aap curd-and-powder mixture ko egg ke bina bhi use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0091",
+      "category": "How to use",
+      "question": "How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0092",
+      "category": "How to use",
+      "question": "Please explain: How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0093",
+      "category": "How to use",
+      "question": "How do I make the paste? in simple words.",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0094",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0095",
+      "category": "How to use",
+      "question": "Customer asks: How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0096",
+      "category": "How to use",
+      "question": "Before I buy, How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0097",
+      "category": "How to use",
+      "question": "What does the approved product information say about: How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0098",
+      "category": "How to use",
+      "question": "Can you clarify: How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0099",
+      "category": "How to use",
+      "question": "Tell me directly: How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0100",
+      "category": "How to use",
+      "question": "I want to know: How do I make the paste?",
+      "answer": "Powder aur curd ko achhe se mix karke smooth, spreadable paste banaiye."
+    },
+    {
+      "id": "FAQ-0101",
+      "category": "How to use",
+      "question": "How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0102",
+      "category": "How to use",
+      "question": "Please explain: How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0103",
+      "category": "How to use",
+      "question": "How long should I keep it? in simple words.",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0104",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0105",
+      "category": "How to use",
+      "question": "Customer asks: How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0106",
+      "category": "How to use",
+      "question": "Before I buy, How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0107",
+      "category": "How to use",
+      "question": "What does the approved product information say about: How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0108",
+      "category": "How to use",
+      "question": "Can you clarify: How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0109",
+      "category": "How to use",
+      "question": "Tell me directly: How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0110",
+      "category": "How to use",
+      "question": "I want to know: How long should I keep it?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0111",
+      "category": "How to use",
+      "question": "How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0112",
+      "category": "How to use",
+      "question": "Please explain: How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0113",
+      "category": "How to use",
+      "question": "How many times a week should I use it? in simple words.",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0114",
+      "category": "How to use",
+      "question": "Can you give me a clear answer to: How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0115",
+      "category": "How to use",
+      "question": "Customer asks: How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0116",
+      "category": "How to use",
+      "question": "Before I buy, How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0117",
+      "category": "How to use",
+      "question": "What does the approved product information say about: How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0118",
+      "category": "How to use",
+      "question": "Can you clarify: How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0119",
+      "category": "How to use",
+      "question": "Tell me directly: How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0120",
+      "category": "How to use",
+      "question": "I want to know: How many times a week should I use it?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0121",
+      "category": "Mixing",
+      "question": "Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0122",
+      "category": "Mixing",
+      "question": "Please explain: Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0123",
+      "category": "Mixing",
+      "question": "Can I mix it with water? in simple words.",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0124",
+      "category": "Mixing",
+      "question": "Can you give me a clear answer to: Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0125",
+      "category": "Mixing",
+      "question": "Customer asks: Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0126",
+      "category": "Mixing",
+      "question": "Before I buy, Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0127",
+      "category": "Mixing",
+      "question": "What does the approved product information say about: Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0128",
+      "category": "Mixing",
+      "question": "Can you clarify: Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0129",
+      "category": "Mixing",
+      "question": "Tell me directly: Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0130",
+      "category": "Mixing",
+      "question": "I want to know: Can I mix it with water?",
+      "answer": "Recommended mixing method mein curd use karna hai, water nahi. 1 tablespoon powder + about 7–8 tablespoons curd."
+    },
+    {
+      "id": "FAQ-0131",
+      "category": "Mixing",
+      "question": "Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0132",
+      "category": "Mixing",
+      "question": "Please explain: Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0133",
+      "category": "Mixing",
+      "question": "Can I mix it with curd? in simple words.",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0134",
+      "category": "Mixing",
+      "question": "Can you give me a clear answer to: Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0135",
+      "category": "Mixing",
+      "question": "Customer asks: Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0136",
+      "category": "Mixing",
+      "question": "Before I buy, Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0137",
+      "category": "Mixing",
+      "question": "What does the approved product information say about: Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0138",
+      "category": "Mixing",
+      "question": "Can you clarify: Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0139",
+      "category": "Mixing",
+      "question": "Tell me directly: Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0140",
+      "category": "Mixing",
+      "question": "I want to know: Can I mix it with curd?",
+      "answer": "Recommended routine mein 1 tablespoon powder ke saath about 7–8 tablespoons curd use kiya jata hai."
+    },
+    {
+      "id": "FAQ-0141",
+      "category": "Mixing",
+      "question": "Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0142",
+      "category": "Mixing",
+      "question": "Please explain: Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0143",
+      "category": "Mixing",
+      "question": "Can I add lemon, onion juice, coconut oil or honey? in simple words.",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0144",
+      "category": "Mixing",
+      "question": "Can you give me a clear answer to: Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0145",
+      "category": "Mixing",
+      "question": "Customer asks: Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0146",
+      "category": "Mixing",
+      "question": "Before I buy, Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0147",
+      "category": "Mixing",
+      "question": "What does the approved product information say about: Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0148",
+      "category": "Mixing",
+      "question": "Can you clarify: Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0149",
+      "category": "Mixing",
+      "question": "Tell me directly: Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0150",
+      "category": "Mixing",
+      "question": "I want to know: Can I add lemon, onion juice, coconut oil or honey?",
+      "answer": "Lemon, onion juice, coconut oil aur honey approved mixing instructions ka part nahi hain. Simplest recommended routine powder + curd hai, with optional egg."
+    },
+    {
+      "id": "FAQ-0151",
+      "category": "Ingredients",
+      "question": "What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0152",
+      "category": "Ingredients",
+      "question": "Please explain: What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0153",
+      "category": "Ingredients",
+      "question": "What ingredients are in it? in simple words.",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0154",
+      "category": "Ingredients",
+      "question": "Can you give me a clear answer to: What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0155",
+      "category": "Ingredients",
+      "question": "Customer asks: What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0156",
+      "category": "Ingredients",
+      "question": "Before I buy, What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0157",
+      "category": "Ingredients",
+      "question": "What does the approved product information say about: What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0158",
+      "category": "Ingredients",
+      "question": "Can you clarify: What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0159",
+      "category": "Ingredients",
+      "question": "Tell me directly: What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0160",
+      "category": "Ingredients",
+      "question": "I want to know: What ingredients are in it?",
+      "answer": "Approved information mein Amla, Bhringraj, Hibiscus, Fenugreek, Aloe Vera aur Curry Leaves listed hain."
+    },
+    {
+      "id": "FAQ-0161",
+      "category": "Hair type",
+      "question": "Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0162",
+      "category": "Hair type",
+      "question": "Please explain: Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0163",
+      "category": "Hair type",
+      "question": "Is it suitable for my hair type? in simple words.",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0164",
+      "category": "Hair type",
+      "question": "Can you give me a clear answer to: Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0165",
+      "category": "Hair type",
+      "question": "Customer asks: Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0166",
+      "category": "Hair type",
+      "question": "Before I buy, Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0167",
+      "category": "Hair type",
+      "question": "What does the approved product information say about: Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0168",
+      "category": "Hair type",
+      "question": "Can you clarify: Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0169",
+      "category": "Hair type",
+      "question": "Tell me directly: Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0170",
+      "category": "Hair type",
+      "question": "I want to know: Is it suitable for my hair type?",
+      "answer": "Supplied Q&A ke mutabik ye dry, oily, curly, straight, wavy, thick, thin, short, long, frizzy, damaged aur chemically treated hair ke liye suitable bataya gaya hai."
+    },
+    {
+      "id": "FAQ-0171",
+      "category": "Hair concerns",
+      "question": "Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0172",
+      "category": "Hair concerns",
+      "question": "Please explain: Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0173",
+      "category": "Hair concerns",
+      "question": "Does it help reduce hair fall? in simple words.",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0174",
+      "category": "Hair concerns",
+      "question": "Can you give me a clear answer to: Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0175",
+      "category": "Hair concerns",
+      "question": "Customer asks: Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0176",
+      "category": "Hair concerns",
+      "question": "Before I buy, Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0177",
+      "category": "Hair concerns",
+      "question": "What does the approved product information say about: Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0178",
+      "category": "Hair concerns",
+      "question": "Can you clarify: Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0179",
+      "category": "Hair concerns",
+      "question": "Tell me directly: Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0180",
+      "category": "Hair concerns",
+      "question": "I want to know: Does it help reduce hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0181",
+      "category": "Hair concerns",
+      "question": "Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0182",
+      "category": "Hair concerns",
+      "question": "Please explain: Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0183",
+      "category": "Hair concerns",
+      "question": "Does it help with dandruff? in simple words.",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0184",
+      "category": "Hair concerns",
+      "question": "Can you give me a clear answer to: Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0185",
+      "category": "Hair concerns",
+      "question": "Customer asks: Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0186",
+      "category": "Hair concerns",
+      "question": "Before I buy, Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0187",
+      "category": "Hair concerns",
+      "question": "What does the approved product information say about: Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0188",
+      "category": "Hair concerns",
+      "question": "Can you clarify: Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0189",
+      "category": "Hair concerns",
+      "question": "Tell me directly: Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0190",
+      "category": "Hair concerns",
+      "question": "I want to know: Does it help with dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0191",
+      "category": "Hair concerns",
+      "question": "Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0192",
+      "category": "Hair concerns",
+      "question": "Please explain: Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0193",
+      "category": "Hair concerns",
+      "question": "Does it support new hair growth? in simple words.",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0194",
+      "category": "Hair concerns",
+      "question": "Can you give me a clear answer to: Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0195",
+      "category": "Hair concerns",
+      "question": "Customer asks: Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0196",
+      "category": "Hair concerns",
+      "question": "Before I buy, Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0197",
+      "category": "Hair concerns",
+      "question": "What does the approved product information say about: Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0198",
+      "category": "Hair concerns",
+      "question": "Can you clarify: Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0199",
+      "category": "Hair concerns",
+      "question": "Tell me directly: Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0200",
+      "category": "Hair concerns",
+      "question": "I want to know: Does it support new hair growth?",
+      "answer": "Brand information product ko new healthy hair growth ko support/encourage karne ke benefit ke saath present karti hai. Individual results vary and no guaranteed regrowth should be promised."
+    },
+    {
+      "id": "FAQ-0201",
+      "category": "Results",
+      "question": "When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0202",
+      "category": "Results",
+      "question": "Please explain: When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0203",
+      "category": "Results",
+      "question": "When can I expect results? in simple words.",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0204",
+      "category": "Results",
+      "question": "Can you give me a clear answer to: When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0205",
+      "category": "Results",
+      "question": "Customer asks: When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0206",
+      "category": "Results",
+      "question": "Before I buy, When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0207",
+      "category": "Results",
+      "question": "What does the approved product information say about: When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0208",
+      "category": "Results",
+      "question": "Can you clarify: When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0209",
+      "category": "Results",
+      "question": "Tell me directly: When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0210",
+      "category": "Results",
+      "question": "I want to know: When can I expect results?",
+      "answer": "Results person to person vary kar sakte hain. Supplied Q&A mein consistent use ke kuch hafton mein improvements notice hone ki claim di gayi hai, but this is not a guarantee."
+    },
+    {
+      "id": "FAQ-0211",
+      "category": "Safety",
+      "question": "Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0212",
+      "category": "Safety",
+      "question": "Please explain: Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0213",
+      "category": "Safety",
+      "question": "Is it safe? in simple words.",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0214",
+      "category": "Safety",
+      "question": "Can you give me a clear answer to: Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0215",
+      "category": "Safety",
+      "question": "Customer asks: Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0216",
+      "category": "Safety",
+      "question": "Before I buy, Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0217",
+      "category": "Safety",
+      "question": "What does the approved product information say about: Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0218",
+      "category": "Safety",
+      "question": "Can you clarify: Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0219",
+      "category": "Safety",
+      "question": "Tell me directly: Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0220",
+      "category": "Safety",
+      "question": "I want to know: Is it safe?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0221",
+      "category": "Safety",
+      "question": "Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0222",
+      "category": "Safety",
+      "question": "Please explain: Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0223",
+      "category": "Safety",
+      "question": "Should I do a patch test? in simple words.",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0224",
+      "category": "Safety",
+      "question": "Can you give me a clear answer to: Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0225",
+      "category": "Safety",
+      "question": "Customer asks: Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0226",
+      "category": "Safety",
+      "question": "Before I buy, Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0227",
+      "category": "Safety",
+      "question": "What does the approved product information say about: Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0228",
+      "category": "Safety",
+      "question": "Can you clarify: Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0229",
+      "category": "Safety",
+      "question": "Tell me directly: Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0230",
+      "category": "Safety",
+      "question": "I want to know: Should I do a patch test?",
+      "answer": "Patch test before first use. If irritation occurs, discontinue use. Avoid eyes and broken/irritated skin."
+    },
+    {
+      "id": "FAQ-0231",
+      "category": "Safety",
+      "question": "Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0232",
+      "category": "Safety",
+      "question": "Please explain: Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0233",
+      "category": "Safety",
+      "question": "Can children use it? in simple words.",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0234",
+      "category": "Safety",
+      "question": "Can you give me a clear answer to: Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0235",
+      "category": "Safety",
+      "question": "Customer asks: Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0236",
+      "category": "Safety",
+      "question": "Before I buy, Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0237",
+      "category": "Safety",
+      "question": "What does the approved product information say about: Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0238",
+      "category": "Safety",
+      "question": "Can you clarify: Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0239",
+      "category": "Safety",
+      "question": "Tell me directly: Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0240",
+      "category": "Safety",
+      "question": "I want to know: Can children use it?",
+      "answer": "Supplied Q&A ke mutabik all age groups ke liye suitable bataya gaya hai, aur children ke use mein adult supervision recommended hai. Patch test first."
+    },
+    {
+      "id": "FAQ-0241",
+      "category": "Safety",
+      "question": "Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0242",
+      "category": "Safety",
+      "question": "Please explain: Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0243",
+      "category": "Safety",
+      "question": "Can pregnant women use it? in simple words.",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0244",
+      "category": "Safety",
+      "question": "Can you give me a clear answer to: Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0245",
+      "category": "Safety",
+      "question": "Customer asks: Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0246",
+      "category": "Safety",
+      "question": "Before I buy, Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0247",
+      "category": "Safety",
+      "question": "What does the approved product information say about: Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0248",
+      "category": "Safety",
+      "question": "Can you clarify: Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0249",
+      "category": "Safety",
+      "question": "Tell me directly: Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0250",
+      "category": "Safety",
+      "question": "I want to know: Can pregnant women use it?",
+      "answer": "Pregnancy-specific guidance supplied information mein available nahi hai. Pregnancy/breastfeeding mein healthcare professional se ingredient suitability confirm karna best hai."
+    },
+    {
+      "id": "FAQ-0251",
+      "category": "Safety",
+      "question": "Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0252",
+      "category": "Safety",
+      "question": "Please explain: Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0253",
+      "category": "Safety",
+      "question": "Can people with chemically treated hair use it? in simple words.",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0254",
+      "category": "Safety",
+      "question": "Can you give me a clear answer to: Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0255",
+      "category": "Safety",
+      "question": "Customer asks: Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0256",
+      "category": "Safety",
+      "question": "Before I buy, Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0257",
+      "category": "Safety",
+      "question": "What does the approved product information say about: Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0258",
+      "category": "Safety",
+      "question": "Can you clarify: Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0259",
+      "category": "Safety",
+      "question": "Tell me directly: Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0260",
+      "category": "Safety",
+      "question": "I want to know: Can people with chemically treated hair use it?",
+      "answer": "Supplied Q&A ke mutabik chemically treated hair ke liye suitable bataya gaya hai; agar treatment ke specific after-care instructions hain to unhe bhi follow karein."
+    },
+    {
+      "id": "FAQ-0261",
+      "category": "Suitability",
+      "question": "Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0262",
+      "category": "Suitability",
+      "question": "Please explain: Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0263",
+      "category": "Suitability",
+      "question": "Can men and women use it? in simple words.",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0264",
+      "category": "Suitability",
+      "question": "Can you give me a clear answer to: Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0265",
+      "category": "Suitability",
+      "question": "Customer asks: Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0266",
+      "category": "Suitability",
+      "question": "Before I buy, Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0267",
+      "category": "Suitability",
+      "question": "What does the approved product information say about: Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0268",
+      "category": "Suitability",
+      "question": "Can you clarify: Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0269",
+      "category": "Suitability",
+      "question": "Tell me directly: Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0270",
+      "category": "Suitability",
+      "question": "I want to know: Can men and women use it?",
+      "answer": "Haan, supplied information ke mutabik men aur women dono use kar sakte hain."
+    },
+    {
+      "id": "FAQ-0271",
+      "category": "Purchase",
+      "question": "What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0272",
+      "category": "Purchase",
+      "question": "Please explain: What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0273",
+      "category": "Purchase",
+      "question": "What is the current price? in simple words.",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0274",
+      "category": "Purchase",
+      "question": "Can you give me a clear answer to: What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0275",
+      "category": "Purchase",
+      "question": "Customer asks: What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0276",
+      "category": "Purchase",
+      "question": "Before I buy, What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0277",
+      "category": "Purchase",
+      "question": "What does the approved product information say about: What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0278",
+      "category": "Purchase",
+      "question": "Can you clarify: What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0279",
+      "category": "Purchase",
+      "question": "Tell me directly: What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0280",
+      "category": "Purchase",
+      "question": "I want to know: What is the current price?",
+      "answer": "Current listed offer price ₹999 hai, with ₹1799 shown as the displayed reference/original price."
+    },
+    {
+      "id": "FAQ-0281",
+      "category": "Purchase",
+      "question": "Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0282",
+      "category": "Purchase",
+      "question": "Please explain: Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0283",
+      "category": "Purchase",
+      "question": "Is COD available? in simple words.",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0284",
+      "category": "Purchase",
+      "question": "Can you give me a clear answer to: Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0285",
+      "category": "Purchase",
+      "question": "Customer asks: Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0286",
+      "category": "Purchase",
+      "question": "Before I buy, Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0287",
+      "category": "Purchase",
+      "question": "What does the approved product information say about: Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0288",
+      "category": "Purchase",
+      "question": "Can you clarify: Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0289",
+      "category": "Purchase",
+      "question": "Tell me directly: Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0290",
+      "category": "Purchase",
+      "question": "I want to know: Is COD available?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0291",
+      "category": "Purchase",
+      "question": "How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0292",
+      "category": "Purchase",
+      "question": "Please explain: How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0293",
+      "category": "Purchase",
+      "question": "How do I order it? in simple words.",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0294",
+      "category": "Purchase",
+      "question": "Can you give me a clear answer to: How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0295",
+      "category": "Purchase",
+      "question": "Customer asks: How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0296",
+      "category": "Purchase",
+      "question": "Before I buy, How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0297",
+      "category": "Purchase",
+      "question": "What does the approved product information say about: How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0298",
+      "category": "Purchase",
+      "question": "Can you clarify: How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0299",
+      "category": "Purchase",
+      "question": "Tell me directly: How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0300",
+      "category": "Purchase",
+      "question": "I want to know: How do I order it?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0301",
+      "category": "Brand",
+      "question": "How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0302",
+      "category": "Brand",
+      "question": "Please explain: How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0303",
+      "category": "Brand",
+      "question": "How can I contact the brand? in simple words.",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0304",
+      "category": "Brand",
+      "question": "Can you give me a clear answer to: How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0305",
+      "category": "Brand",
+      "question": "Customer asks: How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0306",
+      "category": "Brand",
+      "question": "Before I buy, How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0307",
+      "category": "Brand",
+      "question": "What does the approved product information say about: How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0308",
+      "category": "Brand",
+      "question": "Can you clarify: How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0309",
+      "category": "Brand",
+      "question": "Tell me directly: How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0310",
+      "category": "Brand",
+      "question": "I want to know: How can I contact the brand?",
+      "answer": "Official contact: help.rootsandleavescollection@gmail.com and @roots_and_leaves_collection."
+    },
+    {
+      "id": "FAQ-0311",
+      "category": "Storage",
+      "question": "How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0312",
+      "category": "Storage",
+      "question": "Please explain: How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0313",
+      "category": "Storage",
+      "question": "How should I store it? in simple words.",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0314",
+      "category": "Storage",
+      "question": "Can you give me a clear answer to: How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0315",
+      "category": "Storage",
+      "question": "Customer asks: How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0316",
+      "category": "Storage",
+      "question": "Before I buy, How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0317",
+      "category": "Storage",
+      "question": "What does the approved product information say about: How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0318",
+      "category": "Storage",
+      "question": "Can you clarify: How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0319",
+      "category": "Storage",
+      "question": "Tell me directly: How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0320",
+      "category": "Storage",
+      "question": "I want to know: How should I store it?",
+      "answer": "Store the powder in a cool, dry place and protect it from moisture. Keep the pack properly closed."
+    },
+    {
+      "id": "FAQ-0321",
+      "category": "Formulation",
+      "question": "Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0322",
+      "category": "Formulation",
+      "question": "Please explain: Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0323",
+      "category": "Formulation",
+      "question": "Is it sulphate-free, paraben-free and cruelty-free? in simple words.",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0324",
+      "category": "Formulation",
+      "question": "Can you give me a clear answer to: Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0325",
+      "category": "Formulation",
+      "question": "Customer asks: Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0326",
+      "category": "Formulation",
+      "question": "Before I buy, Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0327",
+      "category": "Formulation",
+      "question": "What does the approved product information say about: Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0328",
+      "category": "Formulation",
+      "question": "Can you clarify: Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0329",
+      "category": "Formulation",
+      "question": "Tell me directly: Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0330",
+      "category": "Formulation",
+      "question": "I want to know: Is it sulphate-free, paraben-free and cruelty-free?",
+      "answer": "Supplied Q&A says the website highlights no sulphates, no parabens and cruelty free. Vegan, fragrance-free, silicone-free, preservative-free or mineral-oil-free claims should not be made unless the live website explicitly states them."
+    },
+    {
+      "id": "FAQ-0331",
+      "category": "Formulation",
+      "question": "Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0332",
+      "category": "Formulation",
+      "question": "Please explain: Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0333",
+      "category": "Formulation",
+      "question": "Is it vegan? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0334",
+      "category": "Formulation",
+      "question": "Can you give me a clear answer to: Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0335",
+      "category": "Formulation",
+      "question": "Customer asks: Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0336",
+      "category": "Formulation",
+      "question": "Before I buy, Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0337",
+      "category": "Formulation",
+      "question": "What does the approved product information say about: Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0338",
+      "category": "Formulation",
+      "question": "Can you clarify: Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0339",
+      "category": "Formulation",
+      "question": "Tell me directly: Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0340",
+      "category": "Formulation",
+      "question": "I want to know: Is it vegan?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0341",
+      "category": "Formulation",
+      "question": "Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0342",
+      "category": "Formulation",
+      "question": "Please explain: Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0343",
+      "category": "Formulation",
+      "question": "Is it fragrance-free? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0344",
+      "category": "Formulation",
+      "question": "Can you give me a clear answer to: Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0345",
+      "category": "Formulation",
+      "question": "Customer asks: Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0346",
+      "category": "Formulation",
+      "question": "Before I buy, Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0347",
+      "category": "Formulation",
+      "question": "What does the approved product information say about: Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0348",
+      "category": "Formulation",
+      "question": "Can you clarify: Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0349",
+      "category": "Formulation",
+      "question": "Tell me directly: Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0350",
+      "category": "Formulation",
+      "question": "I want to know: Is it fragrance-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0351",
+      "category": "Formulation",
+      "question": "Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0352",
+      "category": "Formulation",
+      "question": "Please explain: Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0353",
+      "category": "Formulation",
+      "question": "Is it silicone-free? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0354",
+      "category": "Formulation",
+      "question": "Can you give me a clear answer to: Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0355",
+      "category": "Formulation",
+      "question": "Customer asks: Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0356",
+      "category": "Formulation",
+      "question": "Before I buy, Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0357",
+      "category": "Formulation",
+      "question": "What does the approved product information say about: Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0358",
+      "category": "Formulation",
+      "question": "Can you clarify: Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0359",
+      "category": "Formulation",
+      "question": "Tell me directly: Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0360",
+      "category": "Formulation",
+      "question": "I want to know: Is it silicone-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0361",
+      "category": "Formulation",
+      "question": "Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0362",
+      "category": "Formulation",
+      "question": "Please explain: Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0363",
+      "category": "Formulation",
+      "question": "Is it preservative-free? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0364",
+      "category": "Formulation",
+      "question": "Can you give me a clear answer to: Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0365",
+      "category": "Formulation",
+      "question": "Customer asks: Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0366",
+      "category": "Formulation",
+      "question": "Before I buy, Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0367",
+      "category": "Formulation",
+      "question": "What does the approved product information say about: Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0368",
+      "category": "Formulation",
+      "question": "Can you clarify: Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0369",
+      "category": "Formulation",
+      "question": "Tell me directly: Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0370",
+      "category": "Formulation",
+      "question": "I want to know: Is it preservative-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0371",
+      "category": "Formulation",
+      "question": "Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0372",
+      "category": "Formulation",
+      "question": "Please explain: Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0373",
+      "category": "Formulation",
+      "question": "Is it mineral-oil-free? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0374",
+      "category": "Formulation",
+      "question": "Can you give me a clear answer to: Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0375",
+      "category": "Formulation",
+      "question": "Customer asks: Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0376",
+      "category": "Formulation",
+      "question": "Before I buy, Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0377",
+      "category": "Formulation",
+      "question": "What does the approved product information say about: Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0378",
+      "category": "Formulation",
+      "question": "Can you clarify: Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0379",
+      "category": "Formulation",
+      "question": "Tell me directly: Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0380",
+      "category": "Formulation",
+      "question": "I want to know: Is it mineral-oil-free?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0381",
+      "category": "Claims",
+      "question": "Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0382",
+      "category": "Claims",
+      "question": "Please explain: Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0383",
+      "category": "Claims",
+      "question": "Can it permanently stop hair fall? in simple words.",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0384",
+      "category": "Claims",
+      "question": "Can you give me a clear answer to: Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0385",
+      "category": "Claims",
+      "question": "Customer asks: Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0386",
+      "category": "Claims",
+      "question": "Before I buy, Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0387",
+      "category": "Claims",
+      "question": "What does the approved product information say about: Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0388",
+      "category": "Claims",
+      "question": "Can you clarify: Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0389",
+      "category": "Claims",
+      "question": "Tell me directly: Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0390",
+      "category": "Claims",
+      "question": "I want to know: Can it permanently stop hair fall?",
+      "answer": "Brand information ke mutabik product hair fall reduce karne ke benefit ke saath presented hai. Ye guaranteed or permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0391",
+      "category": "Claims",
+      "question": "Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0392",
+      "category": "Claims",
+      "question": "Please explain: Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0393",
+      "category": "Claims",
+      "question": "Can it permanently cure dandruff? in simple words.",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0394",
+      "category": "Claims",
+      "question": "Can you give me a clear answer to: Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0395",
+      "category": "Claims",
+      "question": "Customer asks: Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0396",
+      "category": "Claims",
+      "question": "Before I buy, Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0397",
+      "category": "Claims",
+      "question": "What does the approved product information say about: Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0398",
+      "category": "Claims",
+      "question": "Can you clarify: Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0399",
+      "category": "Claims",
+      "question": "Tell me directly: Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0400",
+      "category": "Claims",
+      "question": "I want to know: Can it permanently cure dandruff?",
+      "answer": "Brand information ke mutabik product dandruff control karne aur itchy/flaky scalp ko soothe karne ke benefit ke saath presented hai. Ye guaranteed permanent cure claim nahi hai."
+    },
+    {
+      "id": "FAQ-0401",
+      "category": "Usage",
+      "question": "Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0402",
+      "category": "Usage",
+      "question": "Please explain: Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0403",
+      "category": "Usage",
+      "question": "Can I leave it overnight? in simple words.",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0404",
+      "category": "Usage",
+      "question": "Can you give me a clear answer to: Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0405",
+      "category": "Usage",
+      "question": "Customer asks: Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0406",
+      "category": "Usage",
+      "question": "Before I buy, Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0407",
+      "category": "Usage",
+      "question": "What does the approved product information say about: Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0408",
+      "category": "Usage",
+      "question": "Can you clarify: Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0409",
+      "category": "Usage",
+      "question": "Tell me directly: Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0410",
+      "category": "Usage",
+      "question": "I want to know: Can I leave it overnight?",
+      "answer": "Mask ko about 20–30 minutes tak rakhiye, phir thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0411",
+      "category": "Usage",
+      "question": "Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0412",
+      "category": "Usage",
+      "question": "Please explain: Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0413",
+      "category": "Usage",
+      "question": "Can I use it every day? in simple words.",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0414",
+      "category": "Usage",
+      "question": "Can you give me a clear answer to: Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0415",
+      "category": "Usage",
+      "question": "Customer asks: Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0416",
+      "category": "Usage",
+      "question": "Before I buy, Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0417",
+      "category": "Usage",
+      "question": "What does the approved product information say about: Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0418",
+      "category": "Usage",
+      "question": "Can you clarify: Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0419",
+      "category": "Usage",
+      "question": "Tell me directly: Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0420",
+      "category": "Usage",
+      "question": "I want to know: Can I use it every day?",
+      "answer": "Recommended routine 1–2 times per week hai; daily use recommended routine nahi hai."
+    },
+    {
+      "id": "FAQ-0421",
+      "category": "Mixing",
+      "question": "Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0422",
+      "category": "Mixing",
+      "question": "Please explain: Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0423",
+      "category": "Mixing",
+      "question": "Can I use milk instead of curd? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0424",
+      "category": "Mixing",
+      "question": "Can you give me a clear answer to: Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0425",
+      "category": "Mixing",
+      "question": "Customer asks: Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0426",
+      "category": "Mixing",
+      "question": "Before I buy, Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0427",
+      "category": "Mixing",
+      "question": "What does the approved product information say about: Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0428",
+      "category": "Mixing",
+      "question": "Can you clarify: Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0429",
+      "category": "Mixing",
+      "question": "Tell me directly: Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0430",
+      "category": "Mixing",
+      "question": "I want to know: Can I use milk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0431",
+      "category": "Mixing",
+      "question": "Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0432",
+      "category": "Mixing",
+      "question": "Please explain: Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0433",
+      "category": "Mixing",
+      "question": "Can I use buttermilk instead of curd? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0434",
+      "category": "Mixing",
+      "question": "Can you give me a clear answer to: Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0435",
+      "category": "Mixing",
+      "question": "Customer asks: Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0436",
+      "category": "Mixing",
+      "question": "Before I buy, Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0437",
+      "category": "Mixing",
+      "question": "What does the approved product information say about: Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0438",
+      "category": "Mixing",
+      "question": "Can you clarify: Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0439",
+      "category": "Mixing",
+      "question": "Tell me directly: Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0440",
+      "category": "Mixing",
+      "question": "I want to know: Can I use buttermilk instead of curd?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0441",
+      "category": "Usage",
+      "question": "What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0442",
+      "category": "Usage",
+      "question": "Please explain: What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0443",
+      "category": "Usage",
+      "question": "What should I do after 20–30 minutes? in simple words.",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0444",
+      "category": "Usage",
+      "question": "Can you give me a clear answer to: What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0445",
+      "category": "Usage",
+      "question": "Customer asks: What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0446",
+      "category": "Usage",
+      "question": "Before I buy, What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0447",
+      "category": "Usage",
+      "question": "What does the approved product information say about: What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0448",
+      "category": "Usage",
+      "question": "Can you clarify: What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0449",
+      "category": "Usage",
+      "question": "Tell me directly: What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0450",
+      "category": "Usage",
+      "question": "I want to know: What should I do after 20–30 minutes?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0451",
+      "category": "Usage",
+      "question": "Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0452",
+      "category": "Usage",
+      "question": "Please explain: Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0453",
+      "category": "Usage",
+      "question": "Should I apply it to scalp and hair length? in simple words.",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0454",
+      "category": "Usage",
+      "question": "Can you give me a clear answer to: Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0455",
+      "category": "Usage",
+      "question": "Customer asks: Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0456",
+      "category": "Usage",
+      "question": "Before I buy, Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0457",
+      "category": "Usage",
+      "question": "What does the approved product information say about: Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0458",
+      "category": "Usage",
+      "question": "Can you clarify: Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0459",
+      "category": "Usage",
+      "question": "Tell me directly: Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0460",
+      "category": "Usage",
+      "question": "I want to know: Should I apply it to scalp and hair length?",
+      "answer": "Bilkul 😊 Isse use karne ka simple tarika:\n1. 1 tablespoon hair-mask powder lijiye.\n2. Usme about 7–8 tablespoons curd milakar smooth, spreadable paste banaiye.\n3. Egg optional hai; compulsory nahi hai.\n4. Prepared mask ko scalp aur hair par evenly apply kijiye.\n5. About 20–30 minutes tak rakhiye.\n6. Water se thoroughly rinse kijiye."
+    },
+    {
+      "id": "FAQ-0461",
+      "category": "Purchase",
+      "question": "Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0462",
+      "category": "Purchase",
+      "question": "Please explain: Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0463",
+      "category": "Purchase",
+      "question": "Is Pan-India shipping free? in simple words.",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0464",
+      "category": "Purchase",
+      "question": "Can you give me a clear answer to: Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0465",
+      "category": "Purchase",
+      "question": "Customer asks: Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0466",
+      "category": "Purchase",
+      "question": "Before I buy, Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0467",
+      "category": "Purchase",
+      "question": "What does the approved product information say about: Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0468",
+      "category": "Purchase",
+      "question": "Can you clarify: Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0469",
+      "category": "Purchase",
+      "question": "Tell me directly: Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0470",
+      "category": "Purchase",
+      "question": "I want to know: Is Pan-India shipping free?",
+      "answer": "Cash on Delivery (COD) available. Free Pan-India Shipping bhi website par shown hai."
+    },
+    {
+      "id": "FAQ-0471",
+      "category": "Purchase",
+      "question": "Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0472",
+      "category": "Purchase",
+      "question": "Please explain: Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0473",
+      "category": "Purchase",
+      "question": "Can I order from the official website? in simple words.",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0474",
+      "category": "Purchase",
+      "question": "Can you give me a clear answer to: Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0475",
+      "category": "Purchase",
+      "question": "Customer asks: Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0476",
+      "category": "Purchase",
+      "question": "Before I buy, Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0477",
+      "category": "Purchase",
+      "question": "What does the approved product information say about: Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0478",
+      "category": "Purchase",
+      "question": "Can you clarify: Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0479",
+      "category": "Purchase",
+      "question": "Tell me directly: Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0480",
+      "category": "Purchase",
+      "question": "I want to know: Can I order from the official website?",
+      "answer": "Order official website https://rootsandleavescollection.in par product ke Buy Now option se start kiya ja sakta hai. COD available hai aur free Pan-India shipping website par shown hai. Exact checkout screen website ke current flow par depend karegi."
+    },
+    {
+      "id": "FAQ-0481",
+      "category": "Trust",
+      "question": "How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0482",
+      "category": "Trust",
+      "question": "Please explain: How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0483",
+      "category": "Trust",
+      "question": "How many happy customers are shown? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0484",
+      "category": "Trust",
+      "question": "Can you give me a clear answer to: How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0485",
+      "category": "Trust",
+      "question": "Customer asks: How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0486",
+      "category": "Trust",
+      "question": "Before I buy, How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0487",
+      "category": "Trust",
+      "question": "What does the approved product information say about: How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0488",
+      "category": "Trust",
+      "question": "Can you clarify: How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0489",
+      "category": "Trust",
+      "question": "Tell me directly: How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0490",
+      "category": "Trust",
+      "question": "I want to know: How many happy customers are shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0491",
+      "category": "Trust",
+      "question": "What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0492",
+      "category": "Trust",
+      "question": "Please explain: What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0493",
+      "category": "Trust",
+      "question": "What customer rating is shown? in simple words.",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0494",
+      "category": "Trust",
+      "question": "Can you give me a clear answer to: What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0495",
+      "category": "Trust",
+      "question": "Customer asks: What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0496",
+      "category": "Trust",
+      "question": "Before I buy, What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0497",
+      "category": "Trust",
+      "question": "What does the approved product information say about: What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0498",
+      "category": "Trust",
+      "question": "Can you clarify: What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0499",
+      "category": "Trust",
+      "question": "Tell me directly: What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    },
+    {
+      "id": "FAQ-0500",
+      "category": "Trust",
+      "question": "I want to know: What customer rating is shown?",
+      "answer": "Information is not currently verified in the approved Roots & Leaves sources. I won't invent an answer."
+    }
+  ]
+}
