@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
     <title>Main MUKA AI</title>
+
 <style>
+
     * {
         box-sizing: border-box;
     }
+
 
     html,
     body {
         width: 100%;
         height: 100%;
         margin: 0;
+        padding: 0;
     }
+
 
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -24,293 +36,652 @@
         overflow: hidden;
     }
 
+
+    /* =====================================================
+       APP
+    ===================================================== */
+
     .app {
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
+        min-height: 100dvh;
+
         display: flex;
         flex-direction: column;
+
+        overflow: hidden;
     }
 
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
     .header {
+        width: 100%;
+
         height: 64px;
         min-height: 64px;
+
         background: #111;
         color: #fff;
+
         display: flex;
         align-items: center;
+
         padding: 0 24px;
+
+        flex-shrink: 0;
     }
+
 
     .avatar {
         width: 40px;
         height: 40px;
         min-width: 40px;
+
         border-radius: 50%;
+
         background: #fff;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
         margin-right: 12px;
     }
+
 
     .eye {
         width: 6px;
         height: 6px;
+
         background: #111;
+
         border-radius: 50%;
+
         margin: 0 3px;
     }
+
 
     .header-title {
         font-size: 17px;
         font-weight: 700;
     }
 
+
     .header-subtitle {
         margin-top: 2px;
+
         font-size: 11px;
+
         color: #fff;
+
         opacity: 0.65;
     }
 
+
+    /* =====================================================
+       MESSAGES
+    ===================================================== */
+
     .messages {
-        flex: 1;
+        flex: 1 1 auto;
+
+        min-height: 0;
+
         overflow-y: auto;
+        overflow-x: hidden;
+
         padding: 28px 20px;
+
+        -webkit-overflow-scrolling: touch;
     }
+
+
+    /* =====================================================
+       WELCOME
+    ===================================================== */
 
     .welcome {
         width: 100%;
+
         max-width: 760px;
+
         margin: 70px auto 25px;
+
         text-align: center;
     }
 
+
     .welcome h1 {
         margin: 0 0 10px;
+
         font-size: 30px;
+
         font-weight: 700;
     }
 
+
     .welcome p {
         margin: 0;
+
         color: #666;
+
         font-size: 15px;
+
         line-height: 1.5;
     }
 
+
+    /* =====================================================
+       MESSAGE ROW
+    ===================================================== */
+
     .message-row {
         width: 100%;
+
         max-width: 850px;
+
         margin: 0 auto 16px;
+
         display: flex;
     }
+
 
     .message-row.user {
         justify-content: flex-end;
     }
 
+
+    /* =====================================================
+       MESSAGE
+    ===================================================== */
+
     .message {
         max-width: 75%;
+
         padding: 13px 16px;
+
         border-radius: 16px;
+
         font-size: 14px;
+
         line-height: 1.55;
+
         white-space: pre-wrap;
+
         word-break: break-word;
+
+        overflow-wrap: anywhere;
     }
+
 
     .message.ai {
         background: #fff;
+
         border: 1px solid #e4e4e4;
+
         color: #111;
     }
+
 
     .message.user {
         background: #111;
+
         color: #fff;
     }
 
+
+    /* =====================================================
+       INPUT AREA
+    ===================================================== */
+
     .input-area {
         width: 100%;
-        padding: 16px 20px 20px;
+
+        padding: 12px 20px 16px;
+
         background: #f5f5f5;
-        flex-shrink: 0;
+
+        flex: 0 0 auto;
     }
+
 
     .input-box {
         width: 100%;
+
         max-width: 850px;
+
         margin: 0 auto;
+
         display: flex;
+
         align-items: center;
+
         gap: 10px;
+
         background: #fff;
+
         border: 1px solid #ddd;
+
         border-radius: 16px;
+
         padding: 8px;
     }
 
+
     #messageInput {
         flex: 1;
+
         min-width: 0;
+
+        width: 100%;
+
         border: none;
+
         outline: none;
+
         padding: 11px 12px;
+
         background: transparent;
+
         color: #111;
+
         font-size: 14px;
     }
+
 
     #messageInput::placeholder {
         color: #999;
     }
 
+
     #sendButton {
         border: none;
+
         background: #111;
+
         color: #fff;
+
         border-radius: 11px;
+
         padding: 11px 20px;
+
         cursor: pointer;
+
         font-size: 14px;
+
         font-weight: 600;
+
         white-space: nowrap;
+
+        flex-shrink: 0;
     }
+
 
     #sendButton:hover {
         background: #222;
     }
 
+
     #sendButton:disabled {
         opacity: 0.5;
+
         cursor: not-allowed;
     }
 
+
+    /* =====================================================
+       STATUS
+    ===================================================== */
+
     .status {
         width: 100%;
+
         max-width: 850px;
+
         margin: 7px auto 0;
+
         color: #888;
+
         font-size: 11px;
     }
 
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
+
     @media (max-width: 600px) {
+
         .header {
-            padding: 0 15px;
-        }
 
-        .messages {
-            padding: 16px;
-        }
-
-        .welcome {
-            margin-top: 45px;
-        }
-
-        .welcome h1 {
-            font-size: 24px;
-        }
-
-        .welcome p {
-            font-size: 14px;
-        }
-
-        .message {
-            max-width: 88%;
-        }
-
-        .input-area {
-            padding: 10px;
-        }
-
-        .input-box {
-            border-radius: 14px;
-        }
-
-        #messageInput {
-            padding: 10px;
-        }
-
-        #sendButton {
-            padding: 10px 14px;
-        }
-    }
-
-    @media (max-width: 380px) {
-        .header {
             height: 60px;
+
             min-height: 60px;
+
+            padding: 0 14px;
         }
+
 
         .avatar {
+
             width: 36px;
+
             height: 36px;
+
             min-width: 36px;
+
+            margin-right: 10px;
         }
 
+
         .header-title {
+
             font-size: 16px;
         }
 
+
         .header-subtitle {
+
             font-size: 10px;
         }
 
-        .welcome h1 {
-            font-size: 22px;
+
+        .messages {
+
+            padding: 14px 12px;
+
+            min-height: 0;
         }
 
+
+        .welcome {
+
+            margin: 42px auto 24px;
+
+            padding: 0 8px;
+        }
+
+
+        .welcome h1 {
+
+            font-size: 24px;
+
+            line-height: 1.25;
+
+            margin-bottom: 8px;
+        }
+
+
+        .welcome p {
+
+            font-size: 13px;
+
+            line-height: 1.45;
+        }
+
+
+        .message-row {
+
+            margin-bottom: 12px;
+        }
+
+
         .message {
+
+            max-width: 90%;
+
+            padding: 11px 13px;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+
+            border-radius: 14px;
+        }
+
+
+        .input-area {
+
+            padding: 8px 10px 10px;
+
+            padding-bottom:
+                max(10px, env(safe-area-inset-bottom));
+        }
+
+
+        .input-box {
+
+            width: 100%;
+
+            gap: 6px;
+
+            padding: 6px;
+
+            border-radius: 14px;
+        }
+
+
+        #messageInput {
+
+            width: 100%;
+
+            min-width: 0;
+
+            padding: 10px 9px;
+
+            font-size: 14px;
+        }
+
+
+        #sendButton {
+
+            flex-shrink: 0;
+
+            padding: 10px 13px;
+
+            border-radius: 10px;
+
             font-size: 13px;
         }
+
+
+        .status {
+
+            margin-top: 5px;
+
+            font-size: 10px;
+
+            padding: 0 2px;
+        }
+
     }
+
+
+    /* =====================================================
+       SMALL MOBILE
+    ===================================================== */
+
+    @media (max-width: 380px) {
+
+        .header {
+
+            height: 56px;
+
+            min-height: 56px;
+        }
+
+
+        .avatar {
+
+            width: 34px;
+
+            height: 34px;
+
+            min-width: 34px;
+        }
+
+
+        .header-title {
+
+            font-size: 15px;
+        }
+
+
+        .header-subtitle {
+
+            font-size: 9px;
+        }
+
+
+        .welcome {
+
+            margin-top: 32px;
+        }
+
+
+        .welcome h1 {
+
+            font-size: 21px;
+        }
+
+
+        .welcome p {
+
+            font-size: 12px;
+        }
+
+
+        .message {
+
+            max-width: 94%;
+
+            font-size: 13px;
+        }
+
+
+        .input-area {
+
+            padding: 7px 8px 9px;
+
+            padding-bottom:
+                max(9px, env(safe-area-inset-bottom));
+        }
+
+
+        #messageInput {
+
+            font-size: 13px;
+
+            padding: 9px 7px;
+        }
+
+
+        #sendButton {
+
+            padding: 9px 11px;
+
+            font-size: 12px;
+        }
+
+    }
+
 </style>
 
 </head>
 
+
 <body>
+
+
 <div class="app">
+
+
+    <!-- =================================================
+         HEADER
+    ================================================= -->
 
     <header class="header">
 
+
         <div class="avatar">
+
             <span class="eye"></span>
+
             <span class="eye"></span>
+
         </div>
+
 
         <div>
+
             <div class="header-title">
+
                 MUKA AI
+
             </div>
 
+
             <div class="header-subtitle">
+
                 KR Media — Main AI
+
             </div>
+
         </div>
+
 
     </header>
 
-    <main class="messages" id="messages">
 
-        <div class="welcome" id="welcome">
+
+    <!-- =================================================
+         MESSAGES
+    ================================================= -->
+
+    <main
+        class="messages"
+        id="messages"
+    >
+
+
+        <div
+            class="welcome"
+            id="welcome"
+        >
 
             <h1>
+
                 Hi, I'm MUKA AI 👋
+
             </h1>
 
+
             <p>
+
                 Your central AI assistant for KR Media.
                 How can I help you today?
+
             </p>
 
         </div>
 
+
     </main>
+
+
+
+    <!-- =================================================
+         INPUT
+    ================================================= -->
 
     <section class="input-area">
 
+
         <div class="input-box">
+
 
             <input
                 id="messageInput"
@@ -319,179 +690,438 @@
                 placeholder="Message MUKA AI..."
             >
 
+
             <button
                 id="sendButton"
                 type="button"
             >
+
                 Send
+
             </button>
 
+
         </div>
 
-        <div class="status" id="status">
+
+        <div
+            class="status"
+            id="status"
+        >
+
             MUKA AI is ready.
+
         </div>
+
 
     </section>
 
+
 </div>
+
+
 
 <script>
 
-    const API_BASE = "http://127.0.0.1:8000";
+
+    /*
+    ========================================================
+    API
+
+    IMPORTANT:
+    Do NOT use 127.0.0.1 here.
+
+    Empty API_BASE means the request goes to:
+    https://muka.krmedia.in/chat
+
+    This makes the same code work on desktop AND mobile.
+    ========================================================
+    */
+
+    const API_BASE = "";
+
+
     const USER_ID = "main_user";
 
-    const messages = document.getElementById("messages");
-    const welcome = document.getElementById("welcome");
-    const input = document.getElementById("messageInput");
-    const sendButton = document.getElementById("sendButton");
-    const status = document.getElementById("status");
 
-    function addMessage(text, type) {
+    const messages =
+        document.getElementById("messages");
+
+
+    const welcome =
+        document.getElementById("welcome");
+
+
+    const input =
+        document.getElementById("messageInput");
+
+
+    const sendButton =
+        document.getElementById("sendButton");
+
+
+    const status =
+        document.getElementById("status");
+
+
+
+    /* =====================================================
+       ADD MESSAGE
+    ===================================================== */
+
+    function addMessage(
+        text,
+        type
+    ) {
+
 
         if (welcome) {
+
             welcome.remove();
+
         }
 
-        const row = document.createElement("div");
+
+        const row =
+            document.createElement("div");
+
 
         row.className =
             "message-row " +
-            (type === "user" ? "user" : "ai");
+            (
+                type === "user"
+                    ? "user"
+                    : "ai"
+            );
 
-        const bubble = document.createElement("div");
+
+        const bubble =
+            document.createElement("div");
+
 
         bubble.className =
             "message " +
-            (type === "user" ? "user" : "ai");
+            (
+                type === "user"
+                    ? "user"
+                    : "ai"
+            );
+
 
         bubble.textContent = text;
 
-        row.appendChild(bubble);
-        messages.appendChild(row);
 
-        messages.scrollTop = messages.scrollHeight;
+        row.appendChild(
+            bubble
+        );
+
+
+        messages.appendChild(
+            row
+        );
+
+
+        messages.scrollTop =
+            messages.scrollHeight;
+
 
         return row;
+
     }
+
+
+
+    /* =====================================================
+       SEND MESSAGE
+    ===================================================== */
 
     async function sendMessage() {
 
-        const text = input.value.trim();
 
-        if (!text || sendButton.disabled) {
+        const text =
+            input.value.trim();
+
+
+        if (
+            !text ||
+            sendButton.disabled
+        ) {
+
             return;
+
         }
 
-        addMessage(text, "user");
+
+        /*
+        Show user's message
+        */
+
+        addMessage(
+            text,
+            "user"
+        );
+
+
+        /*
+        Clear input
+        */
 
         input.value = "";
 
-        sendButton.disabled = true;
 
-        status.textContent = "MUKA is thinking...";
+        /*
+        Disable button while waiting
+        */
 
-        const loading = addMessage("Thinking...", "ai");
+        sendButton.disabled =
+            true;
+
+
+        status.textContent =
+            "MUKA is thinking...";
+
+
+        /*
+        Temporary thinking message
+        */
+
+        const loading =
+            addMessage(
+                "Thinking...",
+                "ai"
+            );
+
 
         try {
 
-            const response = await fetch(
-                API_BASE + "/chat",
-                {
-                    method: "POST",
 
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Accept": "application/json"
-                    },
+            /*
+            =================================================
+            SAME-DOMAIN API REQUEST
 
-                    body: JSON.stringify({
-                        message: text,
-                        user_id: USER_ID
-                    })
-                }
-            );
+            On muka.krmedia.in this becomes:
+
+            /chat
+
+            NOT:
+
+            http://127.0.0.1:8000/chat
+            =================================================
+            */
+
+            const response =
+                await fetch(
+                    API_BASE + "/chat",
+                    {
+                        method: "POST",
+
+                        headers: {
+
+                            "Content-Type":
+                                "application/json",
+
+                            "Accept":
+                                "application/json"
+
+                        },
+
+                        body:
+                            JSON.stringify({
+
+                                message:
+                                    text,
+
+                                user_id:
+                                    USER_ID
+
+                            })
+                    }
+                );
+
+
+            /*
+            Try to read JSON response
+            */
 
             let data;
 
+
             try {
-                data = await response.json();
-            } catch (error) {
+
+                data =
+                    await response.json();
+
+            }
+            catch (error) {
+
                 throw new Error(
                     "Server returned invalid JSON."
                 );
+
             }
+
+
+            /*
+            Remove Thinking...
+            */
 
             loading.remove();
 
+
+            /*
+            Backend returned an error
+            */
+
             if (!response.ok) {
+
                 throw new Error(
+
                     data?.detail ||
+
                     "MUKA backend error."
+
                 );
+
             }
+
+
+            /*
+            Make sure reply exists
+            */
 
             if (
                 !data.reply ||
                 typeof data.reply !== "string"
             ) {
+
                 throw new Error(
                     "MUKA returned an empty reply."
                 );
+
             }
 
-            addMessage(data.reply, "ai");
+
+            /*
+            Show actual MUKA reply
+            */
+
+            addMessage(
+                data.reply,
+                "ai"
+            );
+
 
             status.textContent =
                 "MUKA AI is ready.";
 
-        } catch (error) {
+
+        }
+        catch (error) {
+
 
             console.error(
                 "MUKA ERROR:",
                 error
             );
 
-            loading.remove();
+
+            /*
+            Remove Thinking...
+            */
+
+            if (loading) {
+
+                loading.remove();
+
+            }
+
+
+            /*
+            Show error
+            */
 
             addMessage(
+
                 "Sorry, MUKA AI couldn't respond right now. Please try again.",
+
                 "ai"
+
             );
+
 
             status.textContent =
                 "Connection error.";
 
-        } finally {
+        }
+        finally {
 
-            sendButton.disabled = false;
+
+            /*
+            Enable send button again
+            */
+
+            sendButton.disabled =
+                false;
+
+
+            /*
+            Return cursor to input
+            */
 
             input.focus();
+
         }
+
     }
+
+
+
+    /* =====================================================
+       SEND BUTTON
+    ===================================================== */
 
     sendButton.addEventListener(
         "click",
         sendMessage
     );
 
+
+
+    /* =====================================================
+       ENTER KEY
+    ===================================================== */
+
     input.addEventListener(
+
         "keydown",
+
         function(event) {
 
+
             if (
+
                 event.key === "Enter" &&
+
                 !event.shiftKey
+
             ) {
+
 
                 event.preventDefault();
 
+
                 sendMessage();
+
             }
+
         }
+
     );
+
 
 </script>
 
+
 </body>
+
 </html>
