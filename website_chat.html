@@ -1,0 +1,3576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUKA AI</title>
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    margin:0;
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    min-height:100vh;
+
+    background:
+        radial-gradient(
+            circle at 12% 12%,
+            rgba(45,65,155,.55),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 88% 88%,
+            rgba(91,35,145,.42),
+            transparent 35%
+        ),
+        #070b20;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color:#fff;
+}
+
+
+/* =========================================================
+   MUKA LAUNCHER
+========================================================= */
+
+.muka-launcher{
+    position:fixed;
+
+    right:24px;
+    bottom:24px;
+
+    width:104px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    z-index:99999;
+
+    opacity:1;
+    transform:scale(1);
+
+    pointer-events:auto;
+
+    transition:
+        opacity .22s ease,
+        transform .22s ease;
+}
+
+.muka-launcher.hidden{
+    opacity:0;
+
+    transform:
+        scale(.82)
+        translateY(10px);
+
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   LAUNCH BUTTON
+========================================================= */
+
+#mukaOpenButton{
+    width:78px;
+    height:78px;
+
+    padding:0;
+
+    border-radius:50%;
+
+    border:
+        1px solid rgba(255,255,255,.42);
+
+    background:
+        linear-gradient(
+            135deg,
+            #744cff 0%,
+            #bd50ff 52%,
+            #e75bff 100%
+        );
+
+    box-shadow:
+        0 0 0 4px rgba(105,220,255,.09),
+        0 0 24px rgba(108,197,255,.45),
+        0 12px 32px rgba(0,0,0,.48);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+    appearance:none;
+
+    transition:
+        transform .22s ease,
+        box-shadow .22s ease;
+}
+
+#mukaOpenButton:hover{
+    transform:scale(1.055);
+
+    box-shadow:
+        0 0 0 5px rgba(105,220,255,.12),
+        0 0 35px rgba(108,197,255,.62),
+        0 15px 38px rgba(0,0,0,.52);
+}
+
+#mukaOpenButton:active{
+    transform:scale(.98);
+}
+
+
+/* =========================================================
+   NEED HELP
+========================================================= */
+
+.need-help{
+    margin-top:8px;
+
+    font-size:12px;
+    line-height:1;
+
+    font-weight:700;
+    letter-spacing:.65px;
+
+    color:#fff;
+
+    white-space:nowrap;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.65);
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.button-avatar,
+.header-avatar{
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c55ff,
+            #dc58ff
+        );
+
+    border:
+        2px solid rgba(255,255,255,.38);
+
+    box-shadow:
+        0 0 0 3px rgba(115,220,255,.08),
+        0 0 22px rgba(104,210,255,.38);
+}
+
+.button-avatar{
+    width:64px;
+    height:64px;
+    min-width:64px;
+}
+
+.header-avatar{
+    width:58px;
+    height:58px;
+    min-width:58px;
+}
+
+
+/* =========================================================
+   FACE
+========================================================= */
+
+.button-avatar .muka-face,
+.header-avatar .muka-face{
+    position:absolute;
+
+    width:76px;
+    height:78px;
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-45%);
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff1e8,
+            #ffd8ce
+        );
+
+    border-radius:
+        50% 50% 47% 47%;
+
+    border:
+        2px solid rgba(215,169,255,.78);
+}
+
+
+/* =========================================================
+   HAIR
+========================================================= */
+
+.button-avatar .muka-hair,
+.header-avatar .muka-hair{
+    position:absolute;
+
+    z-index:3;
+
+    width:76px;
+    height:45px;
+
+    left:50%;
+    top:2px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        linear-gradient(
+            135deg,
+            #7145ff,
+            #d74dff,
+            #4322b5
+        );
+
+    clip-path:
+        polygon(
+            0 100%,
+            7% 40%,
+            28% 15%,
+            38% 48%,
+            50% 5%,
+            58% 45%,
+            75% 15%,
+            82% 48%,
+            100% 25%,
+            95% 100%
+        );
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.button-avatar .muka-body,
+.header-avatar .muka-body{
+    position:absolute;
+
+    z-index:1;
+
+    width:76px;
+    height:35px;
+
+    left:50%;
+    bottom:-10px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        linear-gradient(
+            135deg,
+            #7145ff,
+            #d74dff,
+            #4322b5
+        );
+
+    border-radius:
+        45px 45px 15px 15px;
+
+    border:
+        2px solid rgba(215,169,255,.78);
+}
+
+
+/* =========================================================
+   EYES
+========================================================= */
+
+.button-avatar .avatar-eye,
+.header-avatar .avatar-eye{
+    position:absolute;
+
+    z-index:5;
+
+    width:18px;
+    height:22px;
+
+    top:31px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 25%,
+            #8bf4ff,
+            #2188ba 45%,
+            #071640 100%
+        );
+
+    border:
+        2px solid #173c73;
+
+    overflow:hidden;
+}
+
+.button-avatar .avatar-eye.left,
+.header-avatar .avatar-eye.left{
+    left:16px;
+}
+
+.button-avatar .avatar-eye.right,
+.header-avatar .avatar-eye.right{
+    right:16px;
+}
+
+
+/* =========================================================
+   PUPILS
+========================================================= */
+
+.button-avatar .pupil,
+.header-avatar .pupil{
+    position:absolute;
+
+    width:10px;
+    height:14px;
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:#071332;
+
+    transition:
+        transform .08s linear;
+}
+
+.button-avatar .pupil::after,
+.header-avatar .pupil::after{
+    content:"";
+
+    position:absolute;
+
+    width:4px;
+    height:4px;
+
+    top:2px;
+    left:2px;
+
+    border-radius:50%;
+
+    background:#fff;
+}
+
+
+/* =========================================================
+   SMILE
+========================================================= */
+
+.button-avatar .muka-smile,
+.header-avatar .muka-smile{
+    position:absolute;
+
+    z-index:5;
+
+    width:16px;
+    height:8px;
+
+    left:50%;
+    bottom:15px;
+
+    transform:
+        translateX(-50%);
+
+    border-bottom:
+        2px solid #a91c32;
+
+    border-radius:50%;
+}
+
+
+/* =========================================================
+   CHAT CONTAINER
+========================================================= */
+
+.chat-container{
+    position:fixed;
+
+    right:24px;
+    top:50%;
+
+    transform:
+        translateY(-50%);
+
+    width:
+        min(500px, calc(100vw - 48px));
+
+    height:
+        min(720px, calc(100vh - 48px));
+
+    min-height:500px;
+
+    display:none;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(9,16,44,.985),
+            rgba(6,12,32,.985)
+        );
+
+    border:
+        1px solid rgba(120,225,255,.20);
+
+    border-radius:28px;
+
+    box-shadow:
+        0 30px 90px rgba(0,0,0,.58),
+        0 0 60px rgba(90,180,255,.09);
+
+    z-index:99998;
+
+    animation:
+        chatOpen .22s ease;
+}
+
+.chat-container.open{
+    display:flex;
+}
+
+@keyframes chatOpen{
+
+    from{
+        opacity:0;
+
+        transform:
+            translateY(-48%)
+            scale(.97);
+    }
+
+    to{
+        opacity:1;
+
+        transform:
+            translateY(-50%)
+            scale(1);
+    }
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.chat-header{
+    position:relative;
+
+    flex-shrink:0;
+
+    height:92px;
+
+    padding:
+        14px
+        16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(43,62,145,.98),
+            rgba(77,34,116,.98)
+        );
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+
+/* =========================================================
+   HEADER INFO
+========================================================= */
+
+.header-info{
+    min-width:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+.header-info h2{
+    margin:0;
+
+    font-size:20px;
+    line-height:1.1;
+
+    font-weight:750;
+
+    letter-spacing:-.2px;
+}
+
+.online-status{
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    margin-top:5px;
+
+    font-size:11px;
+
+    color:#a9efff;
+}
+
+.online-dot{
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#62f0b2;
+
+    box-shadow:
+        0 0 8px rgba(98,240,178,.85);
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.header-actions{
+    position:absolute;
+
+    right:10px;
+    top:10px;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.icon-button{
+    width:31px;
+    height:31px;
+
+    padding:0;
+
+    border-radius:9px;
+
+    border:
+        1px solid rgba(255,255,255,.14);
+
+    background:
+        rgba(255,255,255,.07);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:
+        background .18s ease,
+        transform .18s ease;
+}
+
+.icon-button:hover{
+    background:
+        rgba(255,255,255,.14);
+
+    transform:
+        translateY(-1px);
+}
+
+.icon-button svg{
+    width:15px;
+    height:15px;
+}
+
+
+/* =========================================================
+   MESSAGES
+========================================================= */
+
+.messages{
+    flex:1;
+
+    min-height:0;
+
+    overflow-y:auto;
+
+    padding:
+        18px
+        16px
+        12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:9px;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:
+        rgba(120,210,255,.25)
+        transparent;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.message{
+    max-width:82%;
+
+    padding:
+        10px 13px;
+
+    border-radius:17px;
+
+    font-size:13px;
+
+    line-height:1.42;
+
+    white-space:pre-line;
+
+    animation:
+        messageIn .20s ease;
+}
+
+@keyframes messageIn{
+
+    from{
+        opacity:0;
+
+        transform:
+            translateY(5px);
+    }
+
+    to{
+        opacity:1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+.bot-message{
+    align-self:flex-start;
+
+    background:
+        rgba(70,210,255,.085);
+
+    border:
+        1px solid rgba(70,210,255,.14);
+
+    color:#eafaff;
+
+    border-bottom-left-radius:5px;
+}
+
+.user-message{
+    align-self:flex-end;
+
+    background:
+        linear-gradient(
+            135deg,
+            #684cff,
+            #c04cff
+        );
+
+    color:#fff;
+
+    border-bottom-right-radius:5px;
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.messages .welcome-message{
+    display:inline-flex !important;
+
+    flex-direction:column !important;
+
+    align-self:flex-start !important;
+
+    width:fit-content !important;
+
+    max-width:70% !important;
+
+    height:auto !important;
+
+    min-height:0 !important;
+
+    flex:none !important;
+
+    margin:0 !important;
+
+    padding:7px 10px !important;
+
+    border-radius:12px !important;
+
+    line-height:1 !important;
+}
+
+.messages .welcome-message .welcome-title{
+    display:block !important;
+
+    height:auto !important;
+
+    min-height:0 !important;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    font-size:12px !important;
+
+    line-height:14px !important;
+
+    font-weight:650 !important;
+}
+
+.messages .welcome-message .welcome-subtitle{
+    display:block !important;
+
+    height:auto !important;
+
+    min-height:0 !important;
+
+    margin:2px 0 0 0 !important;
+
+    padding:0 !important;
+
+    font-size:10.5px !important;
+
+    line-height:13px !important;
+
+    opacity:.80;
+}
+
+
+/* =========================================================
+   QUICK BUTTONS
+========================================================= */
+
+.quick-buttons{
+    flex-shrink:0;
+
+    padding:
+        4px
+        14px
+        10px;
+
+    display:flex;
+
+    gap:7px;
+
+    overflow-x:auto;
+
+    scrollbar-width:none;
+}
+
+.quick-buttons::-webkit-scrollbar{
+    display:none;
+}
+
+.quick-buttons button{
+    flex:0 0 auto;
+
+    height:32px;
+
+    padding:
+        0 11px;
+
+    border-radius:17px;
+
+    border:
+        1px solid rgba(100,220,255,.16);
+
+    background:
+        rgba(70,210,255,.065);
+
+    color:#b9f5ff;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+        background .18s ease,
+        transform .18s ease;
+}
+
+.quick-buttons button:hover{
+    background:
+        rgba(70,210,255,.12);
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================================
+   TYPING
+========================================================= */
+
+.typing{
+    display:none;
+
+    flex-shrink:0;
+
+    padding:
+        4px
+        17px
+        7px;
+
+    font-size:10px;
+
+    color:#9feeff;
+}
+
+.typing-dots{
+    display:inline-flex;
+
+    gap:3px;
+
+    margin-right:5px;
+}
+
+.typing-dots span{
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:#9feeff;
+
+    animation:
+        dotPulse 1s infinite;
+}
+
+.typing-dots span:nth-child(2){
+    animation-delay:.15s;
+}
+
+.typing-dots span:nth-child(3){
+    animation-delay:.3s;
+}
+
+@keyframes dotPulse{
+
+    0%,100%{
+        opacity:.25;
+
+        transform:
+            translateY(0);
+    }
+
+    50%{
+        opacity:1;
+
+        transform:
+            translateY(-2px);
+    }
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.input-area{
+    flex-shrink:0;
+
+    padding:
+        10px
+        12px
+        12px;
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+
+    background:
+        rgba(6,12,32,.94);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+}
+
+#messageInput{
+    flex:1;
+
+    min-width:0;
+
+    height:42px;
+
+    border:
+        1px solid rgba(100,220,255,.18);
+
+    border-radius:13px;
+
+    outline:none;
+
+    background:
+        rgba(255,255,255,.055);
+
+    color:#fff;
+
+    padding:
+        0 12px;
+
+    font-size:12px;
+}
+
+#messageInput::placeholder{
+    color:
+        rgba(255,255,255,.42);
+}
+
+#messageInput:focus{
+    border-color:
+        rgba(110,220,255,.38);
+
+    box-shadow:
+        0 0 0 3px rgba(90,190,255,.05);
+}
+
+
+/* =========================================================
+   INPUT BUTTONS
+========================================================= */
+
+.input-icon-button{
+    width:42px;
+    height:42px;
+
+    min-width:42px;
+
+    padding:0;
+
+    border-radius:13px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    background:
+        rgba(255,255,255,.06);
+
+    color:#d9f9ff;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:
+        transform .18s ease,
+        background .18s ease,
+        box-shadow .18s ease;
+}
+
+.input-icon-button:hover{
+    transform:
+        translateY(-1px);
+
+    background:
+        rgba(255,255,255,.10);
+}
+
+.input-icon-button svg{
+    width:18px;
+    height:18px;
+}
+
+
+/* =========================================================
+   MIC ACTIVE
+========================================================= */
+
+#micButton.listening{
+    background:
+        linear-gradient(
+            135deg,
+            #5d51ff,
+            #d54cff
+        );
+
+    border-color:
+        rgba(255,255,255,.25);
+
+    box-shadow:
+        0 0 18px rgba(115,85,255,.40);
+}
+
+
+/* =========================================================
+   TALK
+========================================================= */
+
+#inputTalkButton{
+    width:auto;
+
+    min-width:84px;
+
+    padding:
+        0 10px;
+
+    gap:5px;
+
+    font-size:9px;
+
+    font-weight:700;
+}
+
+#inputTalkButton.listening{
+    background:
+        linear-gradient(
+            135deg,
+            #e24d8d,
+            #714cff
+        );
+
+    box-shadow:
+        0 0 18px rgba(226,77,141,.35);
+}
+
+
+/* =========================================================
+   SEND
+========================================================= */
+
+#sendButton{
+    width:42px;
+    height:42px;
+
+    min-width:42px;
+
+    padding:0;
+
+    border:0;
+
+    border-radius:13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #684cff,
+            #d24cff
+        );
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 6px 18px rgba(104,76,255,.25);
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease;
+}
+
+#sendButton:hover{
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 8px 22px rgba(104,76,255,.35);
+}
+
+#sendButton svg{
+    width:17px;
+    height:17px;
+}
+
+
+/* =========================================================
+   VOICE STATUS
+========================================================= */
+
+.voice-status{
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    display:none;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:
+        7px 10px;
+
+    border-radius:12px;
+
+    background:
+        rgba(8,14,39,.78);
+
+    border:
+        1px solid rgba(110,220,255,.18);
+
+    font-size:10px;
+
+    color:#bdf5ff;
+
+    backdrop-filter:
+        blur(8px);
+
+    z-index:20;
+}
+
+.voice-status.show{
+    display:flex;
+}
+
+.voice-pulse{
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:#65eeb4;
+
+    box-shadow:
+        0 0 10px rgba(101,238,180,.9);
+
+    animation:
+        voicePulse 1s infinite;
+}
+
+@keyframes voicePulse{
+
+    0%,100%{
+        transform:scale(.8);
+        opacity:.55;
+    }
+
+    50%{
+        transform:scale(1.25);
+        opacity:1;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px){
+
+    .muka-launcher{
+        right:16px;
+        bottom:16px;
+        width:98px;
+    }
+
+    #mukaOpenButton{
+        width:72px;
+        height:72px;
+    }
+
+    .button-avatar{
+        width:59px;
+        height:59px;
+        min-width:59px;
+    }
+
+    .need-help{
+        font-size:11px;
+        margin-top:7px;
+    }
+
+    .chat-container{
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+
+        width:100%;
+        height:100dvh;
+
+        min-height:0;
+
+        transform:none;
+
+        border-radius:0;
+        border:0;
+
+        animation:
+            mobileChatOpen .20s ease;
+    }
+
+    @keyframes mobileChatOpen{
+
+        from{
+            opacity:0;
+
+            transform:
+                translateY(18px);
+        }
+
+        to{
+            opacity:1;
+
+            transform:
+                translateY(0);
+        }
+    }
+
+    .chat-header{
+        height:82px;
+
+        padding:
+            12px 13px;
+    }
+
+    .header-avatar{
+        width:52px;
+        height:52px;
+        min-width:52px;
+    }
+
+    .header-info h2{
+        font-size:18px;
+    }
+
+    .online-status{
+        font-size:10px;
+    }
+
+    .messages{
+        padding:
+            15px
+            12px
+            9px;
+    }
+
+    .message{
+        max-width:88%;
+        font-size:12.5px;
+    }
+
+    .messages .welcome-message{
+        display:inline-flex !important;
+
+        width:fit-content !important;
+
+        max-width:76% !important;
+
+        height:auto !important;
+
+        min-height:0 !important;
+
+        flex:none !important;
+
+        padding:
+            6px 9px !important;
+
+        margin:0 !important;
+
+        line-height:1 !important;
+    }
+
+    .messages .welcome-message .welcome-title{
+        font-size:11.5px !important;
+        line-height:13px !important;
+    }
+
+    .messages .welcome-message .welcome-subtitle{
+        font-size:10px !important;
+        line-height:12px !important;
+
+        margin:2px 0 0 0 !important;
+    }
+
+    .quick-buttons{
+        padding:
+            3px
+            10px
+            8px;
+    }
+
+    .input-area{
+        padding:
+            8px;
+
+        gap:5px;
+
+        padding-bottom:
+            max(
+                8px,
+                env(safe-area-inset-bottom)
+            );
+    }
+
+    #messageInput{
+        height:42px;
+        font-size:12px;
+    }
+
+    .input-icon-button,
+    #sendButton{
+        width:40px;
+        height:40px;
+        min-width:40px;
+    }
+
+    #inputTalkButton{
+        min-width:76px;
+
+        padding:
+            0 7px;
+
+        font-size:8px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media(max-width:380px){
+
+    .header-avatar{
+        width:48px;
+        height:48px;
+        min-width:48px;
+    }
+
+    .header-info h2{
+        font-size:17px;
+    }
+
+    #inputTalkButton{
+        min-width:68px;
+    }
+
+    #inputTalkButton span{
+        display:none;
+    }
+
+    .input-icon-button,
+    #sendButton{
+        width:38px;
+        height:38px;
+        min-width:38px;
+    }
+
+    #messageInput{
+        height:40px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SVG ICONS
+========================================================= -->
+
+<svg
+    width="0"
+    height="0"
+    style="position:absolute"
+    aria-hidden="true"
+>
+    <defs>
+
+        <symbol
+            id="icon-mic"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <rect
+                x="7"
+                y="3"
+                width="10"
+                height="12"
+                rx="5"
+            ></rect>
+
+            <path d="M5 11a7 7 0 0 0 14 0"></path>
+
+            <path d="M12 18v3"></path>
+
+            <path d="M8.5 21h7"></path>
+        </symbol>
+
+
+        <symbol
+            id="icon-voice"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path d="M4 10v4"></path>
+            <path d="M8 7v10"></path>
+            <path d="M12 4v16"></path>
+            <path d="M16 7v10"></path>
+            <path d="M20 10v4"></path>
+        </symbol>
+
+
+        <symbol
+            id="icon-send"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.9"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path d="M21 3L10 14"></path>
+            <path d="M21 3l-7 18-4-7-7-4L21 3z"></path>
+        </symbol>
+
+
+        <symbol
+            id="icon-close"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.9"
+            stroke-linecap="round"
+        >
+            <path d="M6 6l12 12"></path>
+            <path d="M18 6L6 18"></path>
+        </symbol>
+
+
+        <symbol
+            id="icon-stop"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+        >
+            <rect
+                x="7"
+                y="7"
+                width="10"
+                height="10"
+                rx="2"
+            ></rect>
+        </symbol>
+
+    </defs>
+</svg>
+
+
+<!-- =========================================================
+     MUKA LAUNCHER
+========================================================= -->
+
+<div
+    class="muka-launcher"
+    id="mukaLauncher"
+>
+
+    <button
+        id="mukaOpenButton"
+        type="button"
+        aria-label="Open MUKA AI"
+    >
+
+        <div class="button-avatar">
+
+            <div class="muka-face">
+
+                <div class="muka-hair"></div>
+
+                <div class="avatar-eye left">
+
+                    <div
+                        class="pupil"
+                        id="buttonLeftPupil"
+                    ></div>
+
+                </div>
+
+                <div class="avatar-eye right">
+
+                    <div
+                        class="pupil"
+                        id="buttonRightPupil"
+                    ></div>
+
+                </div>
+
+                <div class="muka-smile"></div>
+
+                <div class="muka-body"></div>
+
+            </div>
+
+        </div>
+
+    </button>
+
+
+    <div class="need-help">
+        NEED HELP?
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CHAT BOX
+========================================================= -->
+
+<div
+    class="chat-container"
+    id="chatContainer"
+    aria-hidden="true"
+>
+
+    <header class="chat-header">
+
+        <div class="header-avatar">
+
+            <div class="muka-face">
+
+                <div class="muka-hair"></div>
+
+                <div class="avatar-eye left">
+
+                    <div
+                        class="pupil"
+                        id="headerLeftPupil"
+                    ></div>
+
+                </div>
+
+                <div class="avatar-eye right">
+
+                    <div
+                        class="pupil"
+                        id="headerRightPupil"
+                    ></div>
+
+                </div>
+
+                <div class="muka-smile"></div>
+
+                <div class="muka-body"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-info">
+
+            <h2>MUKA AI</h2>
+
+            <div class="online-status">
+
+                <span class="online-dot"></span>
+
+                <span>Online</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <button
+                class="icon-button"
+                id="closeButton"
+                type="button"
+                aria-label="Close MUKA AI"
+            >
+
+                <svg>
+                    <use href="#icon-close"></use>
+                </svg>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MESSAGES
+    ====================================================== -->
+
+    <main
+        class="messages"
+        id="messages"
+    >
+
+        <div
+            class="message bot-message welcome-message"
+        >
+
+            <div class="welcome-title">
+                Hi, I'm MUKA AI 👋
+            </div>
+
+            <div class="welcome-subtitle">
+                How can I help you today?
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- TYPING -->
+
+    <div
+        class="typing"
+        id="typing"
+    >
+
+        <span class="typing-dots">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </span>
+
+        MUKA is thinking...
+
+    </div>
+
+
+    <!-- QUICK BUTTONS -->
+
+    <div class="quick-buttons">
+
+        <button
+            type="button"
+            data-message="How to use the product?"
+        >
+            How to use
+        </button>
+
+        <button
+            type="button"
+            data-message="What is the price?"
+        >
+            Price
+        </button>
+
+        <button
+            type="button"
+            data-message="Tell me about the product."
+        >
+            General Info
+        </button>
+
+    </div>
+
+
+    <!-- INPUT -->
+
+    <form
+        class="input-area"
+        id="chatForm"
+    >
+
+        <input
+            id="messageInput"
+            type="text"
+            placeholder="Type your message..."
+            autocomplete="off"
+            aria-label="Message"
+        >
+
+
+        <!-- MIC -->
+
+        <button
+            class="input-icon-button"
+            id="micButton"
+            type="button"
+            aria-label="Voice to text"
+            title="Speak"
+        >
+
+            <svg>
+                <use href="#icon-mic"></use>
+            </svg>
+
+        </button>
+
+
+        <!-- TALK TO MUKA -->
+
+        <button
+            class="input-icon-button"
+            id="inputTalkButton"
+            type="button"
+            aria-label="Talk to MUKA"
+            title="Talk to MUKA"
+        >
+
+            <svg>
+                <use href="#icon-voice"></use>
+            </svg>
+
+            <span>Talk</span>
+
+        </button>
+
+
+        <!-- SEND -->
+
+        <button
+            id="sendButton"
+            type="submit"
+            aria-label="Send message"
+            title="Send"
+        >
+
+            <svg>
+                <use href="#icon-send"></use>
+            </svg>
+
+        </button>
+
+    </form>
+
+
+    <!-- VOICE STATUS -->
+
+    <div
+        class="voice-status"
+        id="voiceStatus"
+    >
+
+        <span class="voice-pulse"></span>
+
+        <span id="voiceStatusText">
+            Listening...
+        </span>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+const launcher =
+    document.getElementById("mukaLauncher");
+
+const openButton =
+    document.getElementById("mukaOpenButton");
+
+const chatContainer =
+    document.getElementById("chatContainer");
+
+const closeButton =
+    document.getElementById("closeButton");
+
+const messages =
+    document.getElementById("messages");
+
+const input =
+    document.getElementById("messageInput");
+
+const chatForm =
+    document.getElementById("chatForm");
+
+const micButton =
+    document.getElementById("micButton");
+
+const inputTalkButton =
+    document.getElementById("inputTalkButton");
+
+const typing =
+    document.getElementById("typing");
+
+const voiceStatus =
+    document.getElementById("voiceStatus");
+
+const voiceStatusText =
+    document.getElementById("voiceStatusText");
+
+
+/* =========================================================
+   AUTO LANGUAGE STATE
+========================================================= */
+
+let currentLanguage = "en";
+
+let micRecognition = null;
+
+let talkRecognition = null;
+
+let micListening = false;
+
+let talkListening = false;
+
+let talkSpeaking = false;
+
+let talkRestartTimer = null;
+
+
+/* =========================================================
+   AUTOMATIC LANGUAGE DETECTION
+========================================================= */
+
+function detectLanguage(text){
+
+    if(!text){
+        return currentLanguage || "en";
+    }
+
+
+    const value =
+        String(text).trim();
+
+
+    if(!value){
+        return currentLanguage || "en";
+    }
+
+
+    /*
+       Hindi / Devanagari characters
+    */
+
+    const hindiMatches =
+        value.match(
+            /[\u0900-\u097F]/g
+        );
+
+
+    const englishMatches =
+        value.match(
+            /[A-Za-z]/g
+        );
+
+
+    const hindiCount =
+        hindiMatches
+        ? hindiMatches.length
+        : 0;
+
+
+    const englishCount =
+        englishMatches
+        ? englishMatches.length
+        : 0;
+
+
+    /*
+       Strong Hindi detection
+    */
+
+    if(hindiCount > 0){
+
+        if(
+            hindiCount >=
+            englishCount * 0.35
+        ){
+
+            currentLanguage =
+                "hi";
+
+            return "hi";
+        }
+    }
+
+
+    /*
+       English detection
+    */
+
+    if(englishCount > 0){
+
+        currentLanguage =
+            "en";
+
+        return "en";
+    }
+
+
+    return currentLanguage || "en";
+}
+
+
+/* =========================================================
+   OPEN CHAT
+========================================================= */
+
+function openChat(){
+
+    chatContainer.classList.add(
+        "open"
+    );
+
+    chatContainer.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+    launcher.classList.add(
+        "hidden"
+    );
+
+    setTimeout(
+        () => input.focus(),
+        120
+    );
+}
+
+
+/* =========================================================
+   CLOSE CHAT
+========================================================= */
+
+function hideChat(){
+
+    stopMicRecognition();
+
+    stopTalkMode();
+
+    window.speechSynthesis.cancel();
+
+    chatContainer.classList.remove(
+        "open"
+    );
+
+    chatContainer.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    launcher.classList.remove(
+        "hidden"
+    );
+
+    voiceStatus.classList.remove(
+        "show"
+    );
+}
+
+
+openButton.addEventListener(
+    "click",
+    openChat
+);
+
+
+closeButton.addEventListener(
+    "click",
+    hideChat
+);
+
+
+/* =========================================================
+   EYE TRACKING
+========================================================= */
+
+function moveEyes(event){
+
+    const pupils = [
+
+        document.getElementById(
+            "buttonLeftPupil"
+        ),
+
+        document.getElementById(
+            "buttonRightPupil"
+        ),
+
+        document.getElementById(
+            "headerLeftPupil"
+        ),
+
+        document.getElementById(
+            "headerRightPupil"
+        )
+
+    ];
+
+
+    pupils.forEach(
+        pupil => {
+
+            if(!pupil){
+                return;
+            }
+
+
+            const eye =
+                pupil.parentElement;
+
+
+            const eyeRect =
+                eye.getBoundingClientRect();
+
+
+            const eyeCenterX =
+                eyeRect.left +
+                eyeRect.width / 2;
+
+
+            const eyeCenterY =
+                eyeRect.top +
+                eyeRect.height / 2;
+
+
+            const dx =
+                event.clientX -
+                eyeCenterX;
+
+
+            const dy =
+                event.clientY -
+                eyeCenterY;
+
+
+            const distance =
+                Math.sqrt(
+                    dx * dx +
+                    dy * dy
+                );
+
+
+            if(distance === 0){
+                return;
+            }
+
+
+            const maxMove =
+                4.2;
+
+
+            const moveX =
+                (dx / distance) *
+                Math.min(
+                    maxMove,
+                    distance / 14
+                );
+
+
+            const moveY =
+                (dy / distance) *
+                Math.min(
+                    maxMove,
+                    distance / 14
+                );
+
+
+            pupil.style.transform =
+                `translate(
+                    calc(-50% + ${moveX}px),
+                    calc(-50% + ${moveY}px)
+                )`;
+
+        }
+    );
+}
+
+
+document.addEventListener(
+    "mousemove",
+    moveEyes,
+    {
+        passive:true
+    }
+);
+
+
+/* =========================================================
+   ADD MESSAGE
+========================================================= */
+
+function addMessage(
+    text,
+    type
+){
+
+    if(
+        text === null ||
+        text === undefined
+    ){
+        return;
+    }
+
+
+    const message =
+        document.createElement("div");
+
+
+    message.className =
+        "message " +
+        (
+            type === "user"
+            ? "user-message"
+            : "bot-message"
+        );
+
+
+    message.textContent =
+        String(text);
+
+
+    messages.appendChild(
+        message
+    );
+
+
+    scrollMessages();
+}
+
+
+/* =========================================================
+   SCROLL
+========================================================= */
+
+function scrollMessages(){
+
+    messages.scrollTop =
+        messages.scrollHeight;
+}
+
+
+/* =========================================================
+   TYPING
+========================================================= */
+
+function showTyping(){
+
+    typing.style.display =
+        "block";
+
+    scrollMessages();
+}
+
+
+function hideTyping(){
+
+    typing.style.display =
+        "none";
+}
+
+
+/* =========================================================
+   CHAT API
+========================================================= */
+
+async function getMukaReply(text){
+
+    const language =
+        detectLanguage(text);
+
+    const response =
+        await fetch(
+            '/client-chat',
+            {
+                method: 'POST',
+
+                headers: {
+                    'Content-Type':
+                        'application/json'
+                },
+
+                body: JSON.stringify({
+                    message: text,
+                    project_id:
+                        'roots_leaves_client_ai'
+                })
+            }
+        );
+
+    if(!response.ok){
+
+        let errorMessage =
+            'Client AI request failed.';
+
+        try{
+
+            const errorData =
+                await response.json();
+
+            errorMessage =
+                errorData.detail ||
+                errorMessage;
+
+        }
+        catch(error){}
+
+        throw new Error(
+            errorMessage
+        );
+    }
+
+    const data =
+        await response.json();
+
+    if(
+        data.language === 'hi' ||
+        data.language === 'en'
+    ){
+
+        currentLanguage =
+            data.language;
+    }
+
+    return (
+        data.reply ||
+        'Sorry, I could not generate a reply.'
+    );
+}
+
+
+/* =========================================================
+   SEND MESSAGE
+========================================================= */
+
+async function sendMessage(
+    forcedText = null,
+    speakReply = false
+){
+
+    const text =
+        (
+            forcedText !== null
+            ? forcedText
+            : input.value
+        ).trim();
+
+
+    if(!text){
+        return null;
+    }
+
+
+    /*
+       Detect customer's language BEFORE
+       sending message to backend.
+    */
+
+    detectLanguage(text);
+
+
+    addMessage(
+        text,
+        "user"
+    );
+
+
+    input.value =
+        "";
+
+
+    showTyping();
+
+
+    try{
+
+        const reply =
+            await getMukaReply(text);
+
+
+        hideTyping();
+
+
+        /*
+           Detect language again from AI reply.
+           This helps speech synthesis choose
+           the correct language.
+        */
+
+        detectLanguage(reply);
+
+
+        addMessage(
+            reply,
+            "bot"
+        );
+
+
+        if(
+            speakReply &&
+            reply
+        ){
+
+            await speakMuka(
+                reply
+            );
+        }
+
+
+        return reply;
+
+    }
+    catch(error){
+
+        console.error(
+            "MUKA chat error:",
+            error
+        );
+
+
+        hideTyping();
+
+
+        const fallback =
+            currentLanguage === "hi"
+            ? "MUKA से connection नहीं हो पाया। कृपया फिर से try करें।"
+            : "MUKA couldn't connect. Please try again.";
+
+
+        addMessage(
+            fallback,
+            "bot"
+        );
+
+
+        if(speakReply){
+
+            await speakMuka(
+                fallback
+            );
+        }
+
+
+        return fallback;
+    }
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+chatForm.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+        sendMessage();
+
+    }
+);
+
+
+/* =========================================================
+   QUICK BUTTONS
+========================================================= */
+
+document
+    .querySelectorAll(
+        ".quick-buttons button"
+    )
+    .forEach(
+        button => {
+
+            button.addEventListener(
+                "click",
+                function(){
+
+                    sendMessage(
+                        this.dataset.message,
+                        false
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+/* =========================================================
+   SPEECH RECOGNITION
+========================================================= */
+
+const SpeechRecognition =
+    window.SpeechRecognition ||
+    window.webkitSpeechRecognition;
+
+
+/* =========================================================
+   CHOOSE RECOGNITION LANGUAGE
+========================================================= */
+
+function getRecognitionLanguage(){
+
+    /*
+       No visible language selector.
+
+       MUKA uses the last detected language.
+       Default is Indian English.
+    */
+
+    if(
+        currentLanguage === "hi"
+    ){
+
+        return "hi-IN";
+    }
+
+
+    return "en-IN";
+}
+
+
+/* =========================================================
+   MIC
+========================================================= */
+
+function createMicRecognition(){
+
+    if(!SpeechRecognition){
+        return null;
+    }
+
+
+    const recognition =
+        new SpeechRecognition();
+
+
+    recognition.continuous =
+        false;
+
+    recognition.interimResults =
+        true;
+
+
+    recognition.lang =
+        getRecognitionLanguage();
+
+
+    recognition.onstart =
+        function(){
+
+            micListening =
+                true;
+
+
+            micButton.classList.add(
+                "listening"
+            );
+
+
+            voiceStatusText.textContent =
+                currentLanguage === "hi"
+                ? "सुन रहा हूँ..."
+                : "Listening...";
+
+
+            voiceStatus.classList.add(
+                "show"
+            );
+        };
+
+
+    recognition.onresult =
+        function(event){
+
+            let finalText = "";
+
+            let interimText = "";
+
+
+            for(
+                let i = event.resultIndex;
+                i < event.results.length;
+                i++
+            ){
+
+                const transcript =
+                    event.results[i][0].transcript;
+
+
+                if(
+                    event.results[i].isFinal
+                ){
+
+                    finalText +=
+                        transcript;
+
+                }
+                else{
+
+                    interimText +=
+                        transcript;
+
+                }
+            }
+
+
+            if(finalText.trim()){
+
+                /*
+                   Automatically detect language
+                   from recognized speech.
+                */
+
+                const detected =
+                    detectLanguage(
+                        finalText.trim()
+                    );
+
+
+                input.value =
+                    finalText.trim();
+
+
+                voiceStatusText.textContent =
+                    detected === "hi"
+                    ? "भेज रहा हूँ..."
+                    : "Sending...";
+
+
+                sendMessage();
+
+            }
+            else if(
+                interimText.trim()
+            ){
+
+                input.value =
+                    interimText.trim();
+
+            }
+        };
+
+
+    recognition.onerror =
+        function(event){
+
+            console.warn(
+                "Mic error:",
+                event.error
+            );
+
+
+            stopMicRecognition();
+        };
+
+
+    recognition.onend =
+        function(){
+
+            micListening =
+                false;
+
+
+            micButton.classList.remove(
+                "listening"
+            );
+
+
+            if(!talkListening){
+
+                voiceStatus.classList.remove(
+                    "show"
+                );
+            }
+        };
+
+
+    return recognition;
+}
+
+
+function startMicRecognition(){
+
+    if(!SpeechRecognition){
+
+        alert(
+            "Voice input is not supported in this browser. Please use Chrome or Edge."
+        );
+
+        return;
+    }
+
+
+    stopMicRecognition();
+
+
+    micRecognition =
+        createMicRecognition();
+
+
+    if(!micRecognition){
+        return;
+    }
+
+
+    try{
+
+        micRecognition.start();
+
+    }
+    catch(error){
+
+        console.warn(error);
+
+    }
+}
+
+
+function stopMicRecognition(){
+
+    if(micRecognition){
+
+        try{
+
+            micRecognition.stop();
+
+        }
+        catch(error){}
+
+
+        micRecognition =
+            null;
+    }
+
+
+    micListening =
+        false;
+
+
+    micButton.classList.remove(
+        "listening"
+    );
+
+
+    if(!talkListening){
+
+        voiceStatus.classList.remove(
+            "show"
+        );
+    }
+}
+
+
+micButton.addEventListener(
+    "click",
+    function(){
+
+        if(micListening){
+
+            stopMicRecognition();
+
+        }
+        else{
+
+            startMicRecognition();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   FEMALE HUMAN-LIKE BROWSER VOICE
+========================================================= */
+
+function getBestFemaleVoice(language){
+
+    const voices =
+        window.speechSynthesis.getVoices();
+
+
+    if(!voices || !voices.length){
+        return null;
+    }
+
+
+    const targetLanguage =
+        language === "hi"
+        ? "hi"
+        : "en";
+
+
+    /*
+       Prefer female voices.
+       Different browsers expose different
+       voice names, so we check common names.
+    */
+
+    const femaleKeywords = [
+
+        "female",
+        "woman",
+        "zira",
+        "samantha",
+        "susan",
+        "karen",
+        "moira",
+        "ava",
+        "aria",
+        "jenny",
+        "neerja",
+        "heera",
+        "priya",
+        "google हिन्दी",
+        "google hindi",
+        "google us english",
+        "google uk english"
+
+    ];
+
+
+    const matchingLanguage =
+        voices.filter(
+            voice =>
+                voice.lang &&
+                voice.lang
+                    .toLowerCase()
+                    .startsWith(
+                        targetLanguage
+                    )
+        );
+
+
+    const femaleVoice =
+        matchingLanguage.find(
+            voice => {
+
+                const name =
+                    voice.name
+                    .toLowerCase();
+
+                return femaleKeywords.some(
+                    keyword =>
+                        name.includes(
+                            keyword
+                        )
+                );
+            }
+        );
+
+
+    if(femaleVoice){
+        return femaleVoice;
+    }
+
+
+    /*
+       Fallback:
+       Prefer a Google / Microsoft / Apple
+       voice if available.
+    */
+
+    const qualityVoice =
+        matchingLanguage.find(
+            voice => {
+
+                const name =
+                    voice.name
+                    .toLowerCase();
+
+                return (
+                    name.includes("google") ||
+                    name.includes("microsoft") ||
+                    name.includes("apple")
+                );
+            }
+        );
+
+
+    if(qualityVoice){
+        return qualityVoice;
+    }
+
+
+    return (
+        matchingLanguage[0] ||
+        voices[0] ||
+        null
+    );
+}
+
+
+/* =========================================================
+   LOAD VOICES
+========================================================= */
+
+if(
+    "speechSynthesis" in window
+){
+
+    window.speechSynthesis.onvoiceschanged =
+        function(){
+
+            window.speechSynthesis
+                .getVoices();
+
+        };
+}
+
+
+/* =========================================================
+   TEXT TO SPEECH
+========================================================= */
+
+function speakMuka(text){
+
+    return new Promise(
+        resolve => {
+
+            if(
+                !("speechSynthesis" in window)
+            ){
+
+                resolve();
+
+                return;
+            }
+
+
+            window.speechSynthesis.cancel();
+
+
+            /*
+               Detect language from actual
+               MUKA reply.
+            */
+
+            const language =
+                detectLanguage(text);
+
+
+            const utterance =
+                new SpeechSynthesisUtterance(
+                    text
+                );
+
+
+            utterance.lang =
+                language === "hi"
+                ? "hi-IN"
+                : "en-IN";
+
+
+            const selectedVoice =
+                getBestFemaleVoice(
+                    language
+                );
+
+
+            if(selectedVoice){
+
+                utterance.voice =
+                    selectedVoice;
+            }
+
+
+            /*
+               Human-like browser speech tuning.
+            */
+
+            utterance.rate =
+                language === "hi"
+                ? 0.92
+                : 0.94;
+
+
+            utterance.pitch =
+                1.02;
+
+
+            utterance.volume =
+                1;
+
+
+            utterance.onstart =
+                function(){
+
+                    talkSpeaking =
+                        true;
+
+
+                    voiceStatusText.textContent =
+                        language === "hi"
+                        ? "MUKA बोल रहा है..."
+                        : "MUKA is speaking...";
+
+
+                    voiceStatus.classList.add(
+                        "show"
+                    );
+                };
+
+
+            utterance.onend =
+                function(){
+
+                    talkSpeaking =
+                        false;
+
+
+                    voiceStatus.classList.remove(
+                        "show"
+                    );
+
+
+                    resolve();
+                };
+
+
+            utterance.onerror =
+                function(){
+
+                    talkSpeaking =
+                        false;
+
+
+                    voiceStatus.classList.remove(
+                        "show"
+                    );
+
+
+                    resolve();
+                };
+
+
+            /*
+               Some browsers load voices
+               asynchronously.
+            */
+
+            const voices =
+                window.speechSynthesis
+                    .getVoices();
+
+
+            if(!voices.length){
+
+                setTimeout(
+                    function(){
+
+                        const retryVoice =
+                            getBestFemaleVoice(
+                                language
+                            );
+
+
+                        if(retryVoice){
+
+                            utterance.voice =
+                                retryVoice;
+                        }
+
+
+                        window.speechSynthesis
+                            .speak(
+                                utterance
+                            );
+
+                    },
+                    150
+                );
+
+            }
+            else{
+
+                window.speechSynthesis
+                    .speak(
+                        utterance
+                    );
+            }
+
+        }
+    );
+}
+
+
+/* =========================================================
+   TALK MODE
+========================================================= */
+
+function createTalkRecognition(){
+
+    if(!SpeechRecognition){
+        return null;
+    }
+
+
+    const recognition =
+        new SpeechRecognition();
+
+
+    recognition.continuous =
+        false;
+
+    recognition.interimResults =
+        true;
+
+
+    recognition.lang =
+        getRecognitionLanguage();
+
+
+    recognition.onstart =
+        function(){
+
+            talkListening =
+                true;
+
+
+            talkButtonVisual(
+                true
+            );
+
+
+            voiceStatusText.textContent =
+                currentLanguage === "hi"
+                ? "आपकी बात सुन रहा हूँ..."
+                : "Listening to you...";
+
+
+            voiceStatus.classList.add(
+                "show"
+            );
+        };
+
+
+    recognition.onresult =
+        async function(event){
+
+            let finalText = "";
+
+            let interimText = "";
+
+
+            for(
+                let i = event.resultIndex;
+                i < event.results.length;
+                i++
+            ){
+
+                const transcript =
+                    event.results[i][0].transcript;
+
+
+                if(
+                    event.results[i].isFinal
+                ){
+
+                    finalText +=
+                        transcript;
+
+                }
+                else{
+
+                    interimText +=
+                        transcript;
+
+                }
+            }
+
+
+            if(
+                interimText.trim()
+            ){
+
+                input.value =
+                    interimText.trim();
+            }
+
+
+            if(
+                finalText.trim()
+            ){
+
+                const customerText =
+                    finalText.trim();
+
+
+                /*
+                   AUTO-DETECT CUSTOMER LANGUAGE
+                */
+
+                const detected =
+                    detectLanguage(
+                        customerText
+                    );
+
+
+                input.value =
+                    customerText;
+
+
+                voiceStatusText.textContent =
+                    detected === "hi"
+                    ? "समझ रहा हूँ..."
+                    : "Understanding...";
+
+
+                /*
+                   Send message and automatically
+                   speak the answer in same language.
+                */
+
+                await sendMessage(
+                    customerText,
+                    true
+                );
+
+
+                input.value =
+                    "";
+
+
+                if(talkListening){
+
+                    restartTalkRecognition();
+
+                }
+            }
+        };
+
+
+    recognition.onerror =
+        function(event){
+
+            console.warn(
+                "Talk recognition error:",
+                event.error
+            );
+
+
+            if(
+                talkListening &&
+                event.error !== "not-allowed"
+            ){
+
+                restartTalkRecognition();
+
+            }
+            else{
+
+                stopTalkMode();
+
+            }
+        };
+
+
+    recognition.onend =
+        function(){
+
+            if(
+                talkListening &&
+                !talkSpeaking
+            ){
+
+                restartTalkRecognition();
+
+            }
+        };
+
+
+    return recognition;
+}
+
+
+/* =========================================================
+   TALK BUTTON VISUAL
+========================================================= */
+
+function talkButtonVisual(
+    active
+){
+
+    if(active){
+
+        inputTalkButton.classList.add(
+            "listening"
+        );
+
+
+        inputTalkButton.innerHTML = `
+
+            <svg
+                width="17"
+                height="17"
+            >
+
+                <use href="#icon-stop"></use>
+
+            </svg>
+
+            <span>Stop</span>
+
+        `;
+
+    }
+    else{
+
+        inputTalkButton.classList.remove(
+            "listening"
+        );
+
+
+        inputTalkButton.innerHTML = `
+
+            <svg
+                width="17"
+                height="17"
+            >
+
+                <use href="#icon-voice"></use>
+
+            </svg>
+
+            <span>Talk</span>
+
+        `;
+    }
+}
+
+
+/* =========================================================
+   START TALK
+========================================================= */
+
+function startTalkMode(){
+
+    if(!SpeechRecognition){
+
+        alert(
+            "Voice conversation is not supported in this browser. Please use Chrome or Edge."
+        );
+
+        return;
+    }
+
+
+    stopMicRecognition();
+
+
+    talkListening =
+        true;
+
+
+    talkButtonVisual(
+        true
+    );
+
+
+    startTalkRecognition();
+}
+
+
+/* =========================================================
+   START TALK RECOGNITION
+========================================================= */
+
+function startTalkRecognition(){
+
+    if(!talkListening){
+        return;
+    }
+
+
+    if(talkSpeaking){
+        return;
+    }
+
+
+    if(talkRecognition){
+
+        try{
+
+            talkRecognition.stop();
+
+        }
+        catch(error){}
+
+
+        talkRecognition =
+            null;
+    }
+
+
+    talkRecognition =
+        createTalkRecognition();
+
+
+    if(!talkRecognition){
+        return;
+    }
+
+
+    try{
+
+        talkRecognition.start();
+
+    }
+    catch(error){
+
+        console.warn(
+            "Talk start:",
+            error
+        );
+
+
+        restartTalkRecognition();
+    }
+}
+
+
+/* =========================================================
+   RESTART TALK
+========================================================= */
+
+function restartTalkRecognition(){
+
+    if(!talkListening){
+        return;
+    }
+
+
+    clearTimeout(
+        talkRestartTimer
+    );
+
+
+    talkRestartTimer =
+        setTimeout(
+            function(){
+
+                if(
+                    talkListening &&
+                    !talkSpeaking
+                ){
+
+                    startTalkRecognition();
+
+                }
+
+            },
+            350
+        );
+}
+
+
+/* =========================================================
+   STOP TALK
+========================================================= */
+
+function stopTalkMode(){
+
+    talkListening =
+        false;
+
+    talkSpeaking =
+        false;
+
+
+    clearTimeout(
+        talkRestartTimer
+    );
+
+
+    if(talkRecognition){
+
+        try{
+
+            talkRecognition.stop();
+
+        }
+        catch(error){}
+
+
+        talkRecognition =
+            null;
+    }
+
+
+    window.speechSynthesis.cancel();
+
+
+    talkButtonVisual(
+        false
+    );
+
+
+    voiceStatus.classList.remove(
+        "show"
+    );
+}
+
+
+/* =========================================================
+   TALK BUTTON
+========================================================= */
+
+inputTalkButton.addEventListener(
+    "click",
+    function(){
+
+        if(talkListening){
+
+            stopTalkMode();
+
+        }
+        else{
+
+            startTalkMode();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   ENTER TO SEND
+========================================================= */
+
+input.addEventListener(
+    "keydown",
+    function(event){
+
+        if(
+            event.key === "Enter" &&
+            !event.shiftKey
+        ){
+
+            event.preventDefault();
+
+            sendMessage();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   PAGE VISIBILITY
+========================================================= */
+
+document.addEventListener(
+    "visibilitychange",
+    function(){
+
+        if(document.hidden){
+
+            stopMicRecognition();
+
+            stopTalkMode();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   INITIAL STATE
+========================================================= */
+
+chatContainer.classList.remove(
+    "open"
+);
+
+launcher.classList.remove(
+    "hidden"
+);
+
+</script>
+
+</body>
+</html>

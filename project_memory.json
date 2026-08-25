@@ -1,0 +1,34 @@
+{
+  "projects": {
+    "main_muka_ai": {
+      "name": "Main MUKA AI",
+      "type": "central_ai",
+      "client": "KR Media",
+      "status": "active",
+      "goal": "KR Media ka central AI brain banana jo future projects, client AIs, coding, business aur technical tasks mein madad kare.",
+      "decisions": [
+        "Main MUKA AI central brain rahega.",
+        "Client AIs Main MUKA se alag rahenge.",
+        "Client AI sirf apne assigned client ke business aur website par focused rahega."
+      ],
+      "tasks": [],
+      "notes": []
+    },
+    "roots_leaves_client_ai": {
+      "name": "Roots & Leaves Client AI",
+      "type": "client_ai",
+      "client": "Roots & Leaves Collection",
+      "status": "active",
+      "goal": "Client ki website aur product ke liye dedicated AI salesman banana hai.",
+      "decisions": [
+        "Chatbot ka working UI preserve karna hai aur unnecessary UI changes nahi karne hain."
+      ],
+      "tasks": [
+        "Chatbot ke frontend aur backend ki final testing complete karni hai."
+      ],
+      "notes": [
+        "Current working UI ko future changes ke दौरान preserve karna hai."
+      ]
+    }
+  }
+}
