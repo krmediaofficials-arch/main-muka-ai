@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1694,7 +1694,7 @@ body{
         >
 
             <div class="welcome-title">
-                Hi, I'm MUKA AI 👋
+                Hi, I'm MUKA AI &#128075;
             </div>
 
             <div class="welcome-subtitle">
@@ -2255,9 +2255,66 @@ async function getMukaReply(text){
     const language =
         detectLanguage(text);
 
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const pathProjectId =
+        window.location.pathname
+            .split('/')
+            .filter(Boolean)
+            .pop();
+
+    const projectId =
+        urlParams.get('project_id') ||
+        pathProjectId;
+
+let sessionId = null;
+
+try {
+
+    sessionId = window.localStorage.getItem(
+        'muka_client_session_id'
+    );
+
+} catch (error) {
+
+    sessionId = null;
+}
+
+if(!sessionId){
+
+    sessionId =
+        (window.crypto &&
+         window.crypto.randomUUID)
+        ? window.crypto.randomUUID()
+        : (
+            Date.now().toString(36) +
+            Math.random().toString(36).slice(2)
+        );
+
+    try {
+
+        window.localStorage.setItem(
+            'muka_client_session_id',
+            sessionId
+        );
+
+    } catch (error) {
+
+        // Local storage may be restricted in embedded environments.
+        // The generated session ID remains available in memory.
+    }
+}
+
+    if(!projectId){
+
+        throw new Error(
+            'project_id is required.'
+        );
+    }
+
     const response =
-        await fetch(
-            '/client-chat',
+    await fetch(
+        'https://client.krmedia.in/client-chat',
             {
                 method: 'POST',
 
@@ -2266,11 +2323,16 @@ async function getMukaReply(text){
                         'application/json'
                 },
 
-                body: JSON.stringify({
-                    message: text,
-                    project_id:
-                        'roots_leaves_client_ai'
-                })
+body: JSON.stringify({
+
+    message: text,
+
+    project_id:
+        projectId,
+
+    session_id:
+        sessionId
+})
             }
         );
 
@@ -2313,7 +2375,6 @@ async function getMukaReply(text){
         'Sorry, I could not generate a reply.'
     );
 }
-
 
 /* =========================================================
    SEND MESSAGE
@@ -2409,7 +2470,7 @@ async function sendMessage(
 
         const fallback =
             currentLanguage === "hi"
-            ? "MUKA से connection नहीं हो पाया। कृपया फिर से try करें।"
+            ? "MUKA Ã Â¤Â¸Ã Â¥â€¡ connection Ã Â¤Â¨Ã Â¤Â¹Ã Â¥â‚¬Ã Â¤â€š Ã Â¤Â¹Ã Â¥â€¹ Ã Â¤ÂªÃ Â¤Â¾Ã Â¤Â¯Ã Â¤Â¾Ã Â¥Â¤ Ã Â¤â€¢Ã Â¥Æ’Ã Â¤ÂªÃ Â¤Â¯Ã Â¤Â¾ Ã Â¤Â«Ã Â¤Â¿Ã Â¤Â° Ã Â¤Â¸Ã Â¥â€¡ try Ã Â¤â€¢Ã Â¤Â°Ã Â¥â€¡Ã Â¤â€šÃ Â¥Â¤"
             : "MUKA couldn't connect. Please try again.";
 
 
@@ -2549,7 +2610,7 @@ function createMicRecognition(){
 
             voiceStatusText.textContent =
                 currentLanguage === "hi"
-                ? "सुन रहा हूँ..."
+                ? "Ã Â¤Â¸Ã Â¥ÂÃ Â¤Â¨ Ã Â¤Â°Ã Â¤Â¹Ã Â¤Â¾ Ã Â¤Â¹Ã Â¥â€šÃ Â¤Â..."
                 : "Listening...";
 
 
@@ -2613,7 +2674,7 @@ function createMicRecognition(){
 
                 voiceStatusText.textContent =
                     detected === "hi"
-                    ? "भेज रहा हूँ..."
+                    ? "Ã Â¤Â­Ã Â¥â€¡Ã Â¤Å“ Ã Â¤Â°Ã Â¤Â¹Ã Â¤Â¾ Ã Â¤Â¹Ã Â¥â€šÃ Â¤Â..."
                     : "Sending...";
 
 
@@ -2802,7 +2863,7 @@ function getBestFemaleVoice(language){
         "neerja",
         "heera",
         "priya",
-        "google हिन्दी",
+        "google Ã Â¤Â¹Ã Â¤Â¿Ã Â¤Â¨Ã Â¥ÂÃ Â¤Â¦Ã Â¥â‚¬",
         "google hindi",
         "google us english",
         "google uk english"
@@ -2982,7 +3043,7 @@ function speakMuka(text){
 
                     voiceStatusText.textContent =
                         language === "hi"
-                        ? "MUKA बोल रहा है..."
+                        ? "MUKA Ã Â¤Â¬Ã Â¥â€¹Ã Â¤Â² Ã Â¤Â°Ã Â¤Â¹Ã Â¤Â¾ Ã Â¤Â¹Ã Â¥Ë†..."
                         : "MUKA is speaking...";
 
 
@@ -3115,7 +3176,7 @@ function createTalkRecognition(){
 
             voiceStatusText.textContent =
                 currentLanguage === "hi"
-                ? "आपकी बात सुन रहा हूँ..."
+                ? "Ã Â¤â€ Ã Â¤ÂªÃ Â¤â€¢Ã Â¥â‚¬ Ã Â¤Â¬Ã Â¤Â¾Ã Â¤Â¤ Ã Â¤Â¸Ã Â¥ÂÃ Â¤Â¨ Ã Â¤Â°Ã Â¤Â¹Ã Â¤Â¾ Ã Â¤Â¹Ã Â¥â€šÃ Â¤Â..."
                 : "Listening to you...";
 
 
@@ -3193,7 +3254,7 @@ function createTalkRecognition(){
 
                 voiceStatusText.textContent =
                     detected === "hi"
-                    ? "समझ रहा हूँ..."
+                    ? "Ã Â¤Â¸Ã Â¤Â®Ã Â¤Â Ã Â¤Â°Ã Â¤Â¹Ã Â¤Â¾ Ã Â¤Â¹Ã Â¥â€šÃ Â¤Â..."
                     : "Understanding...";
 
 
@@ -3574,3 +3635,4 @@ launcher.classList.remove(
 
 </body>
 </html>
+

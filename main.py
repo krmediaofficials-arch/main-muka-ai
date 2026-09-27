@@ -1,15 +1,64 @@
-from fastapi import FastAPI, HTTPException
+﻿from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
 from openai import OpenAI
-from datetime import datetime
+from datetime import datetime, timezone
 import os
 import json
 import uuid
 import re
 
+from gmail_oauth import router as gmail_oauth_router
+from gmail_mailbox import router as gmail_mailbox_router
+from gmail_mail_actions import router as gmail_mail_actions_router
+from creative_hub import router as creative_hub_router
+from canva_oauth import router as canva_oauth_router
+from creative_image_generation import router as creative_image_generation_router
+from creative_generation_workspace import router as creative_generation_workspace_router
+from whatsapp_webhook import router as whatsapp_webhook_router
+
+from accounts import (
+    create_user,
+    authenticate_user,
+    get_user,
+    public_user,
+    has_permission,
+    get_user_permissions,
+    can_manage_team,
+    can_create_client_ai,
+    can_manage_client_ai,
+    can_view_all_activity,
+)
+from client_ai_creator import (
+    create_client_ai,
+    get_client_ai,
+    list_client_ais,
+)
+
+from auth_session import (
+    create_session,
+    get_session_user,
+    delete_session,
+)
+
+from muka_memory_manager import (
+    load_memories,
+    normalize_memory,
+    sort_memories_by_importance,
+    add_memory,
+    forget_memory,
+    find_memory_by_text,
+extract_memory_forget_target,
+    get_pending_memory,
+    set_pending_memory,
+    clear_pending_memory,
+    confirm_pending_memory,
+    is_memory_confirmation,
+    is_memory_forget_request,
+    is_memory_rejection
+)
 
 # =========================================================
 # ENVIRONMENT
@@ -47,6 +96,14 @@ app = FastAPI(
     version="2.2.0"
 )
 
+app.include_router(gmail_oauth_router)
+app.include_router(gmail_mailbox_router)
+app.include_router(gmail_mail_actions_router)
+app.include_router(creative_hub_router)
+app.include_router(canva_oauth_router)
+app.include_router(creative_image_generation_router)
+app.include_router(creative_generation_workspace_router)
+app.include_router(whatsapp_webhook_router)
 
 # =========================================================
 # CORS
@@ -290,12 +347,27 @@ software, AI and business projects.
 class ChatRequest(BaseModel):
     message: str
     user_id: str = "main_user"
+    conversation_id: str = ""
 
 
 class ClientChatRequest(BaseModel):
     message: str
     project_id: str = "roots_leaves_client_ai"
 
+class ClientAICreateRequest(BaseModel):
+    client_name: str
+    website: str = ""
+    description: str = ""
+
+class RegisterRequest(BaseModel):
+    name: str
+    email: str
+    password: str
+
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
 
 # =========================================================
 # JSON HELPERS
@@ -384,6 +456,96 @@ def save_conversation(user_id, history):
         CONVERSATION_FILE,
         data
     )
+
+
+# =========================================================
+# MULTI-CONVERSATION STORAGE
+# =========================================================
+
+CONVERSATIONS_FILE = "main_conversations.json"
+
+
+def load_all_conversations():
+    data = load_json_file(
+        CONVERSATIONS_FILE,
+        {}
+    )
+
+    if not isinstance(data, dict):
+        return {}
+
+    return data
+
+
+def create_conversation(user_id, title="New Chat"):
+    conversation_id = str(uuid.uuid4())
+
+    data = load_all_conversations()
+
+    if user_id not in data or not isinstance(data.get(user_id), dict):
+        data[user_id] = {}
+
+    data[user_id][conversation_id] = {
+        "id": conversation_id,
+        "title": title,
+        "created_at": datetime.now().isoformat(),
+        "updated_at": datetime.now().isoformat(),
+        "messages": []
+    }
+
+    save_json_file(
+        CONVERSATIONS_FILE,
+        data
+    )
+
+    return data[user_id][conversation_id]
+
+
+def load_multi_conversation(user_id, conversation_id):
+    data = load_all_conversations()
+
+    user_conversations = data.get(
+        user_id,
+        {}
+    )
+
+    if not isinstance(user_conversations, dict):
+        return None
+
+    conversation = user_conversations.get(
+        conversation_id
+    )
+
+    if not isinstance(conversation, dict):
+        return None
+
+    return conversation
+
+
+def save_multi_conversation(user_id, conversation):
+    if not isinstance(conversation, dict):
+        return False
+
+    conversation_id = conversation.get("id")
+
+    if not conversation_id:
+        return False
+
+    data = load_all_conversations()
+
+    if user_id not in data or not isinstance(data.get(user_id), dict):
+        data[user_id] = {}
+
+    conversation["updated_at"] = datetime.now().isoformat()
+
+    data[user_id][conversation_id] = conversation
+
+    save_json_file(
+        CONVERSATIONS_FILE,
+        data
+    )
+
+    return True
 
 
 # =========================================================
@@ -1351,7 +1513,7 @@ def home():
 
         return FileResponse(
             index_path,
-            media_type="text/html"
+            media_type="text/html; charset=utf-8"
         )
 
     return {
@@ -1394,7 +1556,7 @@ def index():
 
     return FileResponse(
         index_path,
-        media_type="text/html"
+        media_type="text/html; charset=utf-8"
     )
 
 
@@ -1421,8 +1583,796 @@ def health():
 # =========================================================
 # MAIN MUKA CHAT
 # =========================================================
+# =========================================================
+# AUTHENTICATION
+# =========================================================
+
+@app.post("/auth/register")
+def register(request: RegisterRequest):
+
+    result = create_user(
+        name=request.name,
+        email=request.email,
+        password=request.password,
+        role="member",
+        workspace_id="kr_media_workspace"
+    )
+
+    if not result.get("success"):
+        raise HTTPException(
+            status_code=400,
+            detail=result.get(
+                "message",
+                "Account creation failed."
+            )
+        )
+
+    return result
+# =========================================================
+# LOGIN
+# =========================================================
+
+@app.post("/auth/login")
+def login(request: LoginRequest):
+
+    result = authenticate_user(
+        email=request.email,
+        password=request.password
+    )
+
+    if not result.get("success"):
+        raise HTTPException(
+            status_code=401,
+            detail=result.get(
+                "message",
+                "Invalid email or password."
+            )
+        )
+
+    token = create_session(
+        result["user"]
+    )
+
+    return {
+        "success": True,
+        "message": "Login successful.",
+        "token": token,
+        "user": result["user"]
+    }
+
+
+# =========================================================
+# CURRENT AUTHENTICATED USER
+# =========================================================
+
+@app.get("/auth/me")
+def auth_me(token: str):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    return {
+        "success": True,
+        "user": public_user(user)
+    }
+# =========================================================
+# CURRENT USER PERMISSIONS
+# =========================================================
+
+@app.get("/auth/permissions")
+def auth_permissions(token: str):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    return {
+        "success": True,
+        "user_id": user.get("user_id"),
+        "role": user.get("role"),
+        "permissions": get_user_permissions(user)
+    }
+# =========================================================
+# CREATE CLIENT AI
+# =========================================================
+
+@app.post("/client-ai/create")
+def create_client_ai_endpoint(
+    request: ClientAICreateRequest,
+    token: str
+):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_create_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to create Client AI."
+        )
+
+    result = create_client_ai(
+        client_name=request.client_name,
+        website=request.website,
+        description=request.description,
+        created_by=user_id,
+        workspace_id=user.get(
+            "workspace_id",
+            "kr_media_workspace"
+        )
+    )
+
+    if not result.get("success"):
+        raise HTTPException(
+            status_code=400,
+            detail=result.get(
+                "message",
+                "Client AI creation failed."
+            )
+        )
+
+    return result
+# =========================================================
+# LIST CLIENT AIs
+# =========================================================
+
+@app.get("/client-ai/list")
+def list_client_ai_endpoint(token: str):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to view Client AIs."
+        )
+
+    client_ais = list_client_ais(
+        user.get(
+            "workspace_id",
+            "kr_media_workspace"
+        )
+    )
+
+    return {
+        "success": True,
+        "client_ais": client_ais
+    }
+
+@app.get("/client-ai/trash")
+def list_client_ai_trash_endpoint(token: str):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to view Client AI Trash."
+        )
+
+    from client_ai_creator import load_client_ai_trash
+
+    trash = load_client_ai_trash()
+
+    workspace_id = user.get(
+        "workspace_id",
+        "kr_media_workspace"
+    )
+
+    workspace_trash = {
+        project_id: client_ai
+        for project_id, client_ai in trash.items()
+        if client_ai.get(
+            "workspace_id",
+            "kr_media_workspace"
+        ) == workspace_id
+    }
+
+    return {
+        "success": True,
+        "trash": workspace_trash
+    }
+
+
+# =========================================================
+# GET SINGLE CLIENT AI
+# =========================================================
+
+@app.get("/client-ai/{project_id}")
+def get_client_ai_endpoint(
+    project_id: str,
+    token: str
+):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to view Client AIs."
+        )
+
+    client_ai = get_client_ai(project_id)
+
+    if not client_ai:
+        raise HTTPException(
+            status_code=404,
+            detail="Client AI not found."
+        )
+
+    if client_ai.get("workspace_id") != user.get(
+        "workspace_id",
+        "kr_media_workspace"
+    ):
+        raise HTTPException(
+            status_code=403,
+            detail="Client AI does not belong to your workspace."
+        )
+
+    return {
+        "success": True,
+        "client_ai": client_ai
+    }
+
+# =========================================================
+# UPDATE CLIENT AI
+# =========================================================
+
+@app.put("/client-ai/{project_id}")
+def update_client_ai_endpoint(
+    project_id: str,
+    request: ClientAICreateRequest,
+    token: str
+):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to update Client AIs."
+        )
+
+    client_ai = get_client_ai(project_id)
+
+    if not client_ai:
+        raise HTTPException(
+            status_code=404,
+            detail="Client AI not found."
+        )
+
+    if client_ai.get("workspace_id") != user.get(
+        "workspace_id",
+        "kr_media_workspace"
+    ):
+        raise HTTPException(
+            status_code=403,
+            detail="Client AI does not belong to your workspace."
+        )
+
+    configs = list_client_ais(
+        user.get(
+            "workspace_id",
+            "kr_media_workspace"
+        )
+    )
+
+    updated = False
+
+    for item in configs:
+
+        if item.get("project_id") == project_id:
+
+            if request.client_name.strip():
+                item["client_name"] = request.client_name.strip()
+
+            item["website"] = request.website.strip()
+
+            item["description"] = request.description.strip()
+
+            from client_ai_creator import save_client_ai_configs
+
+            all_configs = {
+                ai["project_id"]: ai
+                for ai in configs
+            }
+
+            save_client_ai_configs(
+                all_configs
+            )
+
+            updated = True
+
+            client_ai = item
+
+            break
+
+    if not updated:
+        raise HTTPException(
+            status_code=400,
+            detail="Client AI could not be updated."
+        )
+
+    return {
+        "success": True,
+        "message": "Client AI updated successfully.",
+        "client_ai": client_ai
+    }
+
+# =========================================================
+# ACTIVATE / DEACTIVATE CLIENT AI
+# =========================================================
+
+@app.patch("/client-ai/{project_id}/status")
+def update_client_ai_status(
+    project_id: str,
+    status: str,
+    token: str
+):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to manage Client AIs."
+        )
+
+    if status not in {"active", "inactive"}:
+        raise HTTPException(
+            status_code=400,
+            detail="Status must be 'active' or 'inactive'."
+        )
+
+    client_ai = get_client_ai(project_id)
+
+    if not client_ai:
+        raise HTTPException(
+            status_code=404,
+            detail="Client AI not found."
+        )
+
+    if client_ai.get("workspace_id") != user.get(
+        "workspace_id",
+        "kr_media_workspace"
+    ):
+        raise HTTPException(
+            status_code=403,
+            detail="Client AI does not belong to your workspace."
+        )
+
+    from client_ai_creator import (
+        load_client_ai_configs,
+        save_client_ai_configs,
+    )
+
+    client_ai["status"] = status
+    client_ai["updated_at"] = datetime.now(
+        timezone.utc
+    ).isoformat()
+
+    configs = load_client_ai_configs()
+
+    configs[project_id] = client_ai
+
+    save_client_ai_configs(configs)
+
+    return {
+        "success": True,
+        "message": "Client AI status updated successfully.",
+        "client_ai": client_ai
+    }
+
+# =========================================================
+# DELETE CLIENT AI
+# =========================================================
+
+@app.delete("/client-ai/{project_id}")
+def delete_client_ai_endpoint(
+    project_id: str,
+    token: str
+):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to delete Client AIs."
+        )
+
+    client_ai = get_client_ai(project_id)
+
+    if not client_ai:
+        raise HTTPException(
+            status_code=404,
+            detail="Client AI not found."
+        )
+
+    if client_ai.get("workspace_id") != user.get(
+        "workspace_id",
+        "kr_media_workspace"
+    ):
+        raise HTTPException(
+            status_code=403,
+            detail="Client AI does not belong to your workspace."
+        )
+
+    from client_ai_creator import (
+        load_client_ai_configs,
+        save_client_ai_configs,
+        load_client_ai_trash,
+        save_client_ai_trash,
+    )
+
+    configs = load_client_ai_configs()
+
+    deleted_client = configs.pop(
+        project_id,
+        None
+    )
+
+    if not deleted_client:
+        raise HTTPException(
+            status_code=404,
+            detail="Client AI not found."
+        )
+
+    trash = load_client_ai_trash()
+
+    trash[project_id] = deleted_client
+
+    save_client_ai_configs(configs)
+    save_client_ai_trash(trash)
+
+    return {
+        "success": True,
+        "message": "Client AI moved to Trash.",
+        "project_id": project_id
+    }
+
+# =========================================================
+# CLIENT AI RESTORE FROM TRASH
+# =========================================================
+
+@app.post("/client-ai/{project_id}/restore")
+def restore_client_ai_endpoint(
+    project_id: str,
+    token: str
+):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to restore Client AIs."
+        )
+
+    from client_ai_creator import (
+        load_client_ai_configs,
+        save_client_ai_configs,
+        load_client_ai_trash,
+        save_client_ai_trash,
+    )
+
+    configs = load_client_ai_configs()
+    trash = load_client_ai_trash()
+
+    client_ai = trash.get(project_id)
+
+    if not client_ai:
+        raise HTTPException(
+            status_code=404,
+            detail="Client AI not found in Trash."
+        )
+
+    workspace_id = user.get(
+        "workspace_id",
+        "kr_media_workspace"
+    )
+
+    if client_ai.get(
+        "workspace_id",
+        "kr_media_workspace"
+    ) != workspace_id:
+        raise HTTPException(
+            status_code=403,
+            detail="Client AI does not belong to your workspace."
+        )
+
+    client_ai["status"] = "active"
+
+    configs[project_id] = client_ai
+
+    trash.pop(project_id)
+
+    save_client_ai_configs(configs)
+    save_client_ai_trash(trash)
+
+    return {
+        "success": True,
+        "message": "Client AI restored successfully.",
+        "project_id": project_id,
+        "client_ai": client_ai
+    }
+
+
+# =========================================================
+# CLIENT AI PERMANENT DELETE
+# =========================================================
+
+@app.delete("/client-ai/{project_id}/permanent")
+def permanently_delete_client_ai_endpoint(
+    project_id: str,
+    token: str
+):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    if not can_manage_client_ai(user):
+        raise HTTPException(
+            status_code=403,
+            detail="You do not have permission to permanently delete Client AIs."
+        )
+
+    from client_ai_creator import (
+        load_client_ai_trash,
+        save_client_ai_trash,
+    )
+
+    trash = load_client_ai_trash()
+
+    client_ai = trash.get(project_id)
+
+    if not client_ai:
+        raise HTTPException(
+            status_code=404,
+            detail="Client AI not found in Trash."
+        )
+
+    workspace_id = user.get(
+        "workspace_id",
+        "kr_media_workspace"
+    )
+
+    if client_ai.get(
+        "workspace_id",
+        "kr_media_workspace"
+    ) != workspace_id:
+        raise HTTPException(
+            status_code=403,
+            detail="Client AI does not belong to your workspace."
+        )
+
+    trash.pop(project_id)
+
+    save_client_ai_trash(trash)
+
+    return {
+        "success": True,
+        "message": "Client AI permanently deleted.",
+        "project_id": project_id
+    }
+
+
+# =========================================================
+# MAIN MUKA DASHBOARD SUMMARY
+# =========================================================
+
+@app.get("/dashboard/summary")
+def dashboard_summary(token: str):
+
+    user_id = get_session_user(token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired session."
+        )
+
+    user = get_user(user_id)
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="User account not found."
+        )
+
+    permissions = get_user_permissions(user)
+
+    client_ais = list_client_ais(
+        user.get(
+            "workspace_id",
+            "kr_media_workspace"
+        )
+    )
+
+    return {
+        "success": True,
+        "user": public_user(user),
+        "role": user.get("role"),
+        "permissions": permissions,
+        "workspace_id": user.get(
+            "workspace_id",
+            "kr_media_workspace"
+        ),
+        "client_ais": client_ais,
+        "client_ai_count": len(client_ais)
+    }
+
+# =========================================================
+# LOGOUT
+# =========================================================
+
+@app.post("/auth/logout")
+def logout(token: str):
+
+    deleted = delete_session(token)
+
+    return {
+        "success": True,
+        "message": (
+            "Logged out successfully."
+            if deleted
+            else "Session already expired or invalid."
+        )
+    }
+
 
 @app.post("/chat")
+ 
+
 def chat(request: ChatRequest):
 
     message = request.message.strip()
@@ -1438,16 +2388,148 @@ def chat(request: ChatRequest):
 
     if not user_id:
         user_id = "main_user"
+    # =====================================================
+    # MEMORY FORGET REQUEST
+    # =====================================================
 
+    if is_memory_forget_request(message):
+
+        forget_target = extract_memory_forget_target(
+    message
+)
+
+
+
+        if forget_target:
+            target_memory = find_memory_by_text(
+                user_id,
+                forget_target
+            )
+        if not forget_target:
+            clear_pending_memory(user_id)
+
+            return {
+                "status": "success",
+                "reply": "Theek hai 👍 Maine aapki naam bhoolne ki request samajh li. Ab main aapka naam use nahi karunga.",
+                "user_id": user_id,
+                "mode": "main_muka_ai",
+                "memory_saved": False,
+                "project_actions": [],
+                "projects_loaded": len(get_projects())
+            }
+            if target_memory:
+                deleted = forget_memory(
+                    user_id,
+                    target_memory.get("id")
+                )
+
+                if deleted:
+                    return {
+                        "status": "success",
+                        "reply": (
+                            "Done 👍 Maine ye memory bhula di:\n\n"
+                            + target_memory.get(
+                                "memory",
+                                ""
+                            )
+                        ),
+                        "user_id": user_id,
+                        "mode": "main_muka_ai",
+                        "memory_saved": False,
+                        "project_actions": [],
+                        "projects_loaded": len(get_projects())
+                    }
+    if is_memory_forget_request(message) and not target_memory:
+        return {
+            "status": "success",
+            "reply": "Theek hai 👍 Aapka naam ab meri long-term memory mein saved nahi hai, isliye maine use bhool diya hai.",
+            "user_id": user_id,
+            "mode": "main_muka_ai",
+            "memory_saved": False,
+            "project_actions": [],
+            "projects_loaded": len(get_projects())
+        }
+
+    # =====================================================
+    # PENDING MEMORY CONFIRMATION
+    # =====================================================
+
+    pending_memory = get_pending_memory(user_id)
+
+    if pending_memory:
+
+        if is_memory_confirmation(message):
+
+            saved, saved_memory = confirm_pending_memory(
+                user_id
+            )
+
+            if saved:
+                return {
+                    "status": "success",
+                    "reply": (
+                        "Done 👍 Maine ye baat long-term memory mein save kar li hai:\n\n"
+                        + str(saved_memory)
+                    ),
+                    "user_id": user_id,
+                    "mode": "main_muka_ai",
+                    "memory_saved": True,
+                    "project_actions": [],
+                    "projects_loaded": len(get_projects())
+                }
+
+        if is_memory_rejection(message):
+
+            clear_pending_memory(user_id)
+
+            return {
+                "status": "success",
+                "reply": "Theek hai 👍 Maine ise memory mein save nahi kiya.",
+                "user_id": user_id,
+                "mode": "main_muka_ai",
+                "memory_saved": False,
+                "project_actions": [],
+                "projects_loaded": len(get_projects())
+            }
     try:
 
-        conversation_history = load_conversation(
-            user_id
-        )
+        conversation_id = request.conversation_id.strip()
 
-        long_term_memories = load_long_term_memory(
-            user_id
-        )
+        if conversation_id:
+            current_conversation = load_multi_conversation(
+                user_id,
+                conversation_id
+            )
+
+            if current_conversation is None:
+                raise HTTPException(
+                    status_code=404,
+                    detail="Conversation not found."
+                )
+
+            conversation_history = current_conversation.get(
+                "messages",
+                []
+            )
+
+        else:
+            current_conversation = create_conversation(
+                user_id,
+                message[:60] if message else "New Chat"
+            )
+
+            conversation_id = current_conversation["id"]
+            conversation_history = current_conversation.get(
+                "messages",
+                []
+            )
+
+        long_term_memories = sort_memories_by_importance(
+    [
+        normalize_memory(memory)
+        for memory in load_memories(user_id)
+    ]
+)
 
         project_context = get_project_context()
 
@@ -1499,14 +2581,28 @@ LONG-TERM MEMORY
 
                 if memory:
 
-                    memory_text += (
-                        "- "
-                        + memory
-                        + "\n"
-                    )
+
+                    category = item.get(
+                        "category",
+                        "general"
+                    ) if isinstance(item, dict) else "general"
+
+                    importance = item.get(
+                        "importance",
+                        "medium"
+                    ) if isinstance(item, dict) else "medium"
+
+                memory_text += (
+                    "- ["
+                    + importance.upper()
+                    + "] ["
+                    + category
+                    + "] "
+                    + memory
+                    + "\n"
+                )
 
             memory_text += """
-
 =========================================================
 END LONG-TERM MEMORY
 =========================================================
@@ -1631,9 +2727,18 @@ END LONG-TERM MEMORY
 
         if memory_to_save:
 
-            memory_saved = add_long_term_memory(
+            set_pending_memory(
                 user_id,
-                memory_to_save
+                memory_to_save,
+                category="general"
+            )
+
+            reply = (
+                reply
+                + "\n\n"
+                + "💾 Ye baat important lag rahi hai. "
+                + "Kya aap chahte hain ki main ise "
+                + "long-term memory mein save karun?"
             )
 
         conversation_history.append({
@@ -1670,9 +2775,18 @@ END LONG-TERM MEMORY
             conversation_history[-100:]
         )
 
-        save_conversation(
+        if not current_conversation:
+            current_conversation = create_conversation(
+                user_id,
+                message[:60] if message else "New Chat"
+            )
+            conversation_id = current_conversation["id"]
+
+        current_conversation["messages"] = conversation_history
+
+        save_multi_conversation(
             user_id,
-            conversation_history
+            current_conversation
         )
 
         return {
@@ -1685,6 +2799,9 @@ END LONG-TERM MEMORY
 
             "user_id":
                 user_id,
+
+            "conversation_id":
+                conversation_id,
 
             "mode":
                 "main_muka_ai",
@@ -1762,8 +2879,88 @@ def chat_get(
 
 
 # =========================================================
+# RECENT CHATS
+# =========================================================
+
+@app.get("/conversations/{user_id}")
+def list_conversations(user_id: str):
+
+    user_id = user_id.strip() or "main_user"
+
+    data = load_all_conversations()
+    user_conversations = data.get(user_id, {})
+
+    if not isinstance(user_conversations, dict):
+        user_conversations = {}
+
+    conversations = []
+
+    for conversation in user_conversations.values():
+
+        if not isinstance(conversation, dict):
+            continue
+
+        messages = conversation.get("messages", [])
+
+        conversations.append({
+            "id": conversation.get("id", ""),
+            "title": conversation.get("title", "New Chat"),
+            "created_at": conversation.get("created_at", ""),
+            "updated_at": conversation.get("updated_at", ""),
+            "message_count": len(messages) if isinstance(messages, list) else 0
+        })
+
+    conversations.sort(
+        key=lambda item: item.get("updated_at", ""),
+        reverse=True
+    )
+
+    return {
+        "status": "success",
+        "user_id": user_id,
+        "conversations": conversations
+    }
+
+
+# =========================================================
+# SINGLE CONVERSATION
+# =========================================================
+
+@app.get("/conversations/{user_id}/{conversation_id}")
+def get_conversation(user_id: str, conversation_id: str):
+
+    user_id = user_id.strip() or "main_user"
+    conversation_id = conversation_id.strip()
+
+    if not conversation_id:
+        raise HTTPException(
+            status_code=400,
+            detail="Conversation ID is required."
+        )
+
+    conversation = load_multi_conversation(
+        user_id,
+        conversation_id
+    )
+
+    if conversation is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Conversation not found."
+        )
+
+    return {
+        "status": "success",
+        "user_id": user_id,
+        "conversation": conversation
+    }
+
+
+# =========================================================
 # CLIENT AI CHAT
 # =========================================================
+
+
 
 @app.post("/client-chat")
 def client_chat(request: ClientChatRequest):
